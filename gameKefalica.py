@@ -107,7 +107,7 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        pygame.display.set_caption("Аутопут")
+        pygame.display.set_caption("Highway")
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont(None, 24)
 
@@ -485,12 +485,12 @@ class Game:
                                     is_selected=True)
 
         # Draw buttons with highlight effect using the new helper method
-        self.draw_button(self.check_solution_button, "Провери")
-        self.draw_button(self.undo_button, "Врати")
-        self.draw_button(self.prev_level_button, "Претходни ниво")
-        self.draw_button(self.new_tiles_button, "Нови делови")
+        self.draw_button(self.check_solution_button, "Check")
+        self.draw_button(self.undo_button, "Undo")
+        self.draw_button(self.prev_level_button, "Previous Level")
+        self.draw_button(self.new_tiles_button, "New Pieces")
 
-        lvl_text = self.font.render(f"Ниво: {self.current_level}", True, TEXT_COLOR)
+        lvl_text = self.font.render(f"Level: {self.current_level}", True, TEXT_COLOR)
         self.screen.blit(lvl_text, (10, 10))
         if self.message:
             msg_render = self.font.render(self.message, True, TEXT_COLOR)
@@ -601,24 +601,24 @@ class Game:
         if correct:
             self.road_path_pixels = self.calculate_path_points()
             if not self.road_path_pixels:
-                self.message = "Нема исправне путање!"
+                self.message = "No valid path!"
                 self.message_timer = pygame.time.get_ticks()
                 return
             self.car_x, self.car_y = self.road_path_pixels[0]
             self.path_index = 0
             self.state = GameState.ANIMATING
-            self.message = "Супер! Погледај пролазак аутомобила."
+            self.message = "Great! Watch the car drive through."
             self.message_timer = pygame.time.get_ticks()
             if self.car_sound:
                 self.car_sound.play(-1)
         else:
-            self.message = "Нетачно решење. Пробај поново."
+            self.message = "Incorrect solution. Try again."
             self.message_timer = pygame.time.get_ticks()
 
     def update_car_animation(self):
         if self.path_index >= len(self.road_path_pixels) - 1:
             self.state = GameState.LEVEL_COMPLETE
-            self.message = "Ниво је завршен! Кликни за наставак."
+            self.message = "Level completed! Click to continue."
             self.message_timer = pygame.time.get_ticks()
             self.save_progress(self.current_level)
             if self.car_sound:
@@ -671,8 +671,8 @@ class Game:
         pygame.display.flip()
 
     def draw_menu(self):
-        title = self.font.render("АУТОПУТ", True, TEXT_COLOR)
-        instr = self.font.render("Кликни за почетак игре", True, TEXT_COLOR)
+        title = self.font.render("HIGHWAY", True, TEXT_COLOR)
+        instr = self.font.render("Click to start the game", True, TEXT_COLOR)
         self.screen.blit(title, (SCREEN_WIDTH//2 - title.get_width()//2, SCREEN_HEIGHT//3))
         self.screen.blit(instr, (SCREEN_WIDTH//2 - instr.get_width()//2, SCREEN_HEIGHT//2))
 
@@ -688,7 +688,7 @@ class Game:
         sys.exit()
 
     def game_over(self):
-        self.message = "Игра је завршена! Нема више нивоа."
+        self.message = "The game is over! No more levels."
         self.message_timer = pygame.time.get_ticks() 
         self.state = GameState.MENU
 

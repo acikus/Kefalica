@@ -3,7 +3,7 @@ import tkinter as tk
 class IgraSabOduz:
     def __init__(self, root):
         self.root = root
-        self.root.title("Бројалица")
+        self.root.title("Counter")
 
         # Set initial operation to "+"
         self.operacija = "+"
@@ -28,7 +28,7 @@ class IgraSabOduz:
         frame5 = tk.Frame(self.root)
         frame5.pack(pady=5)
 
-        self.labela_red0 = tk.Label(frame1, text="Кликни на круг да га обојиш. Можеш кликнути на плус(+) или минус(-).", font=("Arial", 14), fg="red", bg="wheat")
+        self.labela_red0 = tk.Label(frame1, text="Click a circle to color it. You can click plus (+) or minus (-).", font=("Arial", 14), fg="red", bg="wheat")
         self.labela_red0.pack()
 
         # Canvas for the first row of circles
@@ -145,14 +145,14 @@ def main(parent=None):
     """
     if parent is None:
         root = tk.Tk()
-        root.title("Бројалица")
+        root.title("Counter")
         # Allow resizing of the window.
         root.resizable(True, True)
         app = IgraSabOduz(root)
         root.mainloop()
     else:
         top = tk.Toplevel(parent)
-        top.title("Бројалица")
+        top.title("Counter")
         top.resizable(True, True)
         # Optionally, if you want modal behavior, use grab_set(), but do not use transient()
         top.grab_set()

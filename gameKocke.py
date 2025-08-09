@@ -47,16 +47,16 @@ def run_pyramid_game(game_window):
     controls_frame = tk.Frame(main_frame)
     controls_frame.pack(side='right', fill='y', padx=10)
 
-    timer_label = tk.Label(controls_frame, text="Време: 0s", font=('Arial', 12))
+    timer_label = tk.Label(controls_frame, text="Time: 0s", font=('Arial', 12))
     timer_label.pack(pady=5)
 
-    score_label = tk.Label(controls_frame, text="Резултат: 0", font=('Arial', 12))
+    score_label = tk.Label(controls_frame, text="Score: 0", font=('Arial', 12))
     score_label.pack(pady=5)
 
-    question_label = tk.Label(controls_frame, text="Колико има коцкица?", font=('Arial', 12))
+    question_label = tk.Label(controls_frame, text="How many cubes?", font=('Arial', 12))
     question_label.pack(pady=5)
 
-    result_label = tk.Label(controls_frame, text="Одговор: ", font=('Arial', 12))
+    result_label = tk.Label(controls_frame, text="Answer: ", font=('Arial', 12))
     result_label.pack(pady=5)
 
     answer_buttons = [tk.Button(controls_frame, text="", font=('Arial', 10), width=10)
@@ -78,7 +78,7 @@ def run_pyramid_game(game_window):
         # Destroy ONLY the sub-game window, not the main switchboard
         game_window.destroy()
 
-    exit_button = tk.Button(controls_frame, text="Излаз", font=('Arial', 10), width=10, 
+    exit_button = tk.Button(controls_frame, text="Exit", font=('Arial', 10), width=10,
                             command=exit_game)
     exit_button.pack(pady=10)
 
@@ -90,7 +90,7 @@ def run_pyramid_game(game_window):
         if not game_window.winfo_exists():
             return
         elapsed = int(time.time() - start_time)
-        timer_label.config(text=f"Време: {elapsed}s")
+        timer_label.config(text=f"Time: {elapsed}s")
         timer_id = game_window.after(1000, update_timer)
 
     update_timer()
@@ -141,11 +141,11 @@ def run_pyramid_game(game_window):
         nonlocal score
         if selected == correct_answer:
             score += 10
-            result_label.config(text="Одговор: Тачно")
+            result_label.config(text="Answer: Correct")
         else:
             score -= 5
-            result_label.config(text="Одговор: Нетачно")
-        score_label.config(text=f"Резултат: {score}")
+            result_label.config(text="Answer: Incorrect")
+        score_label.config(text=f"Score: {score}")
         next_level()
 
     correct_answer = 0
@@ -155,14 +155,14 @@ def main(parent=None):
     if parent is None:
         # Standalone
         root_window = tk.Tk()
-        root_window.title("Коцкице")
+        root_window.title("Cubes")
         root_window.geometry("1024x768")
         run_pyramid_game(root_window)
         root_window.mainloop()
     else:
         # Modal mode
         local_toplevel = tk.Toplevel(parent)
-        local_toplevel.title("Коцкице")
+        local_toplevel.title("Cubes")
         local_toplevel.geometry("1024x768")
         local_toplevel.grab_set()
         local_toplevel.focus_set()

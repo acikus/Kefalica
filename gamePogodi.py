@@ -84,7 +84,7 @@ class GuessingGame:
         """
         self.root = root
         self.parent = parent
-        self.root.title("Погоди ко сам")
+        self.root.title("Guess Who I Am")
         self.root.geometry("1024x768")
         # Allow the window to be resized so that it can be maximized after minimizing
         self.root.resizable(True, True)
@@ -154,7 +154,7 @@ class GuessingGame:
         # Next image button (disabled until current puzzle is solved)
         self.next_button = tk.Button(
             control_frame,
-            text="Следећа Слика",
+            text="Next Image",
             font=("Arial", 14),
             command=self.load_next_image,
             state=tk.DISABLED
@@ -162,7 +162,7 @@ class GuessingGame:
         self.next_button.grid(row=0, column=0, padx=5, pady=5) 
         self.end_button = tk.Button(
             control_frame,
-            text="Крај",
+            text="End",
             font=("Arial", 14),
             command=self.root.destroy
         )
@@ -189,7 +189,7 @@ class GuessingGame:
     def update_status_label(self):
         """Updates the status label with score and lives."""
         self.status_label.config(
-            text=f"Резултат: {self.score} | Животи: {self.lives}"
+            text=f"Score: {self.score} | Lives: {self.lives}"
         )
 
     def generate_display_word(self):
@@ -232,8 +232,8 @@ class GuessingGame:
         """Randomly chooses one image from the remaining set, loads it, and sets up the puzzle."""
         if not self.remaining_indices:
             messagebox.showinfo(
-                "Крај игре",
-                f"Нема више слика.\nРезултат: {self.score} тачних од много покушаја.\nЖивоти прекинути: {10 - self.lives}"
+                "Game Over",
+                f"No more images.\nScore: {self.score} correct out of many attempts.\nLives lost: {10 - self.lives}"
             )
             self.root.destroy()
             return
@@ -247,8 +247,8 @@ class GuessingGame:
             loaded_img = Image.open(image_path).convert('RGB')
         except Exception as e:
             messagebox.showwarning(
-                "Упозорење",
-                f"Не могу учитати слику: {image_path}\n{e}\nПрескакам..."
+                "Warning",
+                f"Cannot load image: {image_path}\n{e}\nSkipping..."
             )
             self.load_next_image()
             return
@@ -293,7 +293,7 @@ class GuessingGame:
                 self.disable_letter_buttons()
                 self.next_button.config(state=tk.DISABLED)
                 self.update_display_word()
-                self.status_label.config(text=f"Изгубили сте све животе! Игра је завршена.Резултат: {self.score}")
+                self.status_label.config(text=f"You lost all lives! Game over. Score: {self.score}")
                 return
 
         self.update_display_word()
@@ -316,7 +316,7 @@ def main(parent=None):
     if parent is None:
         # Stand-alone
         root = tk.Tk()
-        root.title("Погоди ко сам")
+        root.title("Guess Who I Am")
         root.geometry("1024x768")
         root.resizable(True, True)
         GuessingGame(root)
@@ -324,7 +324,7 @@ def main(parent=None):
     else:
         # Modal inside existing Tkinter app
         top = tk.Toplevel(parent)
-        top.title("Погоди ко сам")
+        top.title("Guess Who I Am")
         top.geometry("1024x768")
         top.resizable(True, True)
         # Instead of calling top.mainloop(), use wait_window() so control returns to the parent.

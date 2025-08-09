@@ -105,18 +105,18 @@ class Player:
                     if pos <= 64:
                         self.animation_path.append(board_positions[pos])
             
-            message = f"{self.name} померио се на {self.position}"
+            message = f"{self.name} moved to {self.position}"
             
             if self.position in snakes:
                 old_snake_position = self.position
                 self.position = snakes[self.position]
                 self.animation_path.append(board_positions[self.position])
-                message = f"{self.name} је грицнут! Померио се од {old_snake_position} до {self.position}"
+                message = f"{self.name} was bitten! Moved from {old_snake_position} to {self.position}"
             elif self.position in ladders:
                 old_ladder_position = self.position
                 self.position = ladders[self.position]
                 self.animation_path.append(board_positions[self.position])
-                message = f"{self.name} се попео уз мердевине! Померио се од {old_ladder_position} до {self.position}"
+                message = f"{self.name} climbed a ladder! Moved from {old_ladder_position} to {self.position}"
             
             if self.animation_path:
                 self.target_x, self.target_y = self.animation_path[0]
@@ -125,11 +125,11 @@ class Player:
             
             if self.position == 64:
                 self.won = True
-                message = f"{self.name} је победио!"
+                message = f"{self.name} has won!"
 
             return message
         else:
-            return f"{self.name} треба тачно {64 - self.position} да победи"
+            return f"{self.name} needs exactly {64 - self.position} to win"
     
     def update_animation(self):
         if not self.is_animating or not self.animation_path:
@@ -191,7 +191,7 @@ class SnakesAndLadders:
         self.dice_value = 1
         self.game_started = False
         self.game_mode = None  # "1p" or "2p"
-        self.game_message = "Чувај се змијица!"
+        self.game_message = "Beware of snakes!"
         self.roll_animation = False
         self.roll_end_time = 0
         self.waiting_for_animation = False
@@ -254,7 +254,7 @@ class SnakesAndLadders:
         self.dice_value = 1
         self.game_started = False
         self.game_mode = None
-        self.game_message = "Змије и мердевине!"
+        self.game_message = "Snakes and Ladders!"
         self.roll_animation = False
         self.waiting_for_animation = False
 
@@ -269,10 +269,10 @@ class SnakesAndLadders:
 
     def run(self):
         # Create buttons for in-game controls and menu options
-        roll_btn = Button(SCREEN_WIDTH//2 - 50, SCREEN_HEIGHT - 60, 100, 50, "Бацај", (255, 255, 200), (255, 255, 150))
-        new_game_btn = Button(SCREEN_WIDTH - 140, 20, 120, 40, "Нова игра", (255, 200, 200), (255, 150, 150))
-        one_player_btn = Button(SCREEN_WIDTH//2 - 150, 300, 300, 50, "1 Играч против компјутера", (200, 200, 255), (150, 150, 255))
-        two_player_btn = Button(SCREEN_WIDTH//2 - 150, 370, 300, 50, "2 Играча", (200, 255, 200), (150, 255, 150))
+        roll_btn = Button(SCREEN_WIDTH//2 - 50, SCREEN_HEIGHT - 60, 100, 50, "Roll", (255, 255, 200), (255, 255, 150))
+        new_game_btn = Button(SCREEN_WIDTH - 140, 20, 120, 40, "New Game", (255, 200, 200), (255, 150, 150))
+        one_player_btn = Button(SCREEN_WIDTH//2 - 150, 300, 300, 50, "1 Player vs Computer", (200, 200, 255), (150, 150, 255))
+        two_player_btn = Button(SCREEN_WIDTH//2 - 150, 370, 300, 50, "2 Players", (200, 255, 200), (150, 255, 150))
         
         clock = pygame.time.Clock()
         running = True
@@ -309,7 +309,7 @@ class SnakesAndLadders:
                 font = pygame.font.SysFont(None, 30)
                 if not any(player.won for player in self.players):
                     current_player = self.players[self.current_player_index]
-                    text = font.render(f"Тренутно игра: {current_player.name}", True, current_player.color)
+                    text = font.render(f"Currently playing: {current_player.name}", True, current_player.color)
                     text_bg = pygame.Rect(20, 20, text.get_width() + 10, text.get_height() + 10)
                     pygame.draw.rect(screen, WHITE, text_bg)
                     pygame.draw.rect(screen, BLACK, text_bg, 1)
@@ -342,7 +342,7 @@ class SnakesAndLadders:
                 screen.blit(overlay, (0, 0))
                 
                 title_font = pygame.font.SysFont(None, 60)
-                title_text = title_font.render("Змије и мердевине", True, BLACK)
+                title_text = title_font.render("Snakes and Ladders", True, BLACK)
                 screen.blit(title_text, (SCREEN_WIDTH // 2 - title_text.get_width() // 2, 150))
                 
                 one_player_btn.check_hover(mouse_pos)
@@ -352,13 +352,13 @@ class SnakesAndLadders:
                 
                 if one_player_btn.check_click(mouse_pos, mouse_clicked):
                     self.game_mode = "1p"
-                    self.add_player("Ваша висост", RED, player_img)
-                    self.add_player("Компјутер", BLUE, computer_img)
+                    self.add_player("Your Highness", RED, player_img)
+                    self.add_player("Computer", BLUE, computer_img)
                     self.game_started = True
                 elif two_player_btn.check_click(mouse_pos, mouse_clicked):
                     self.game_mode = "2p"  # Note: Adjust text as needed.
-                    self.add_player("Играч 1", RED, player_img)
-                    self.add_player("Играч 2", BLUE, computer_img)
+                    self.add_player("Player 1", RED, player_img)
+                    self.add_player("Player 2", BLUE, computer_img)
                     self.game_started = True
 
             pygame.display.flip()
@@ -374,7 +374,7 @@ def main(parent=None):
     global screen, board_img, dice_images, player_img, computer_img
 
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    pygame.display.set_caption("Змије и мердевине")
+    pygame.display.set_caption("Snakes and Ladders")
     
     # Load images now (they won't be loaded on import)
     try:

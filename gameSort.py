@@ -129,7 +129,7 @@ def main(parent=None):
         pygame.init()
         pygame.font.init()
         screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-        pygame.display.set_caption("Сортирање")
+        pygame.display.set_caption("Sorting")
         clock = pygame.time.Clock()
 
         NUM_COLORS, TUBE_CAPACITY, EXTRA_TUBES = LEVELS[current_level]
@@ -223,11 +223,11 @@ def main(parent=None):
             if not game_over and selected_ball is None:
                 if check_win_condition(tubes, selected_ball, NUM_COLORS, TUBE_CAPACITY):
                     game_over = True
-                    game_message = "Честитамо! Решили сте!"
+                    game_message = "Congratulations! You solved it!"
                     final_time = pygame.time.get_ticks()
                 elif no_legal_moves(tubes, TUBE_CAPACITY):
                     game_over = True
-                    game_message = "Нема више дозвољених потеза!"
+                    game_message = "No more legal moves!"
                     final_time = pygame.time.get_ticks()
 
             for event in pygame.event.get():
@@ -347,7 +347,7 @@ def main(parent=None):
                     pygame.draw.circle(screen, BUTTON_HOVER_COLOR, center, radio_radius)
                 else:
                     pygame.draw.circle(screen, BUTTON_COLOR, center, radio_radius, 2)
-                label = small_font.render(f"Ниво {btn['level']}", True, TEXT_COLOR)
+                label = small_font.render(f"Level {btn['level']}", True, TEXT_COLOR)
                 label_rect = label.get_rect(midleft=(btn['rect'].right + 10, center[1]))
                 screen.blit(label, label_rect)
 
@@ -356,17 +356,17 @@ def main(parent=None):
             elapsed_seconds = elapsed_ms // 1000
             minutes = elapsed_seconds // 60
             seconds = elapsed_seconds % 60
-            timer_text = f"Време: {minutes:02d}:{seconds:02d}"
-            moves_text = f"Потези: {move_count}"
+            timer_text = f"Time: {minutes:02d}:{seconds:02d}"
+            moves_text = f"Moves: {move_count}"
             label_font_render = pygame.font.SysFont("Arial", 36)
             screen.blit(label_font_render.render(timer_text, True, TEXT_COLOR), (20, 60))
             screen.blit(label_font_render.render(moves_text, True, TEXT_COLOR), (20, 100))
 
             # Always-visible buttons
             for rect, text, active in [
-                (undo_button_rect, "Врати", selected_ball is None and bool(move_history)),
-                (restart_button_rect, "Рестарт", True),
-                (exit_button_rect, "Излаз", True)
+                (undo_button_rect, "Undo", selected_ball is None and bool(move_history)),
+                (restart_button_rect, "Restart", True),
+                (exit_button_rect, "Exit", True)
             ]:
                 color = BUTTON_HOVER_COLOR if rect.collidepoint(mouse_pos) and active else BUTTON_COLOR
                 pygame.draw.rect(screen, color, rect)
@@ -429,7 +429,7 @@ def main(parent=None):
                 message_rect = message_surface.get_rect(center=(WINDOW_WIDTH // 2, WINDOW_HEIGHT - 20))
                 screen.blit(message_surface, message_rect)
 
-                for rect, text in [(new_game_button_rect, "Нова игра"), (end_button_rect, "Крај")]:
+                for rect, text in [(new_game_button_rect, "New Game"), (end_button_rect, "End")]:
                     color = BUTTON_HOVER_COLOR if rect.collidepoint(mouse_pos) else BUTTON_COLOR
                     pygame.draw.rect(screen, color, rect)
                     text_surface = button_font.render(text, True, BUTTON_TEXT_COLOR)

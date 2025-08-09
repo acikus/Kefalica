@@ -81,10 +81,10 @@ class DictionaryManager:
                     word = line.strip().lower()
                     if word:
                         self.words.append(word)
-            print(f"Учитано {len(self.words)} речи из {filepath}")
+            print(f"Loaded {len(self.words)} words from {filepath}")
         else:
-            self.words = ["простор", "звезда", "ракета", "галаксија", "сунце"]
-            print("Датотека са речима није пронађена; коришћен је резервни списак речи.")
+            self.words = ["space", "star", "rocket", "galaxy", "sun"]
+            print("Word file not found; fallback word list used.")
 
     def is_valid_word(self, word):
         """Returns True if the given word is in the dictionary."""
@@ -277,7 +277,7 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.RESIZABLE)
-        pygame.display.set_caption("Градитељ речи - Ћирилица")
+        pygame.display.set_caption("Word Builder - Cyrillic")
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont("Arial", 24)
         self.big_font = pygame.font.SysFont("Arial", 48)
@@ -362,10 +362,10 @@ class Game:
         if word:
             if self.dictionary_manager.is_valid_word(word):
                 self.score_manager.add_points(word)
-                self.message = f"'{word}' - валидна реч! +{len(word) * 10} поена"
+                self.message = f"'{word}' - valid word! +{len(word) * 10} points"
             else:
                 self.lives -= 1
-                self.message = f"'{word}' није валидна реч. Изгубили сте живот!"
+                self.message = f"'{word}' is not a valid word. You lost a life!"
                 if self.lives <= 0:
                     self.game_over = True
                     self.message = ""
@@ -387,27 +387,27 @@ class Game:
 
         self.player.draw(self.screen, self.font)
 
-        score_surface = self.font.render(f"Поени: {self.score_manager.score}", True, BLACK)
+        score_surface = self.font.render(f"Score: {self.score_manager.score}", True, BLACK)
         self.screen.blit(score_surface, (10, 10))
-        lives_surface = self.font.render(f"Животи: {self.lives}", True, BLACK)
+        lives_surface = self.font.render(f"Lives: {self.lives}", True, BLACK)
         self.screen.blit(lives_surface, (10, 40))
         if self.message:
             msg_color = BLUE if "-" in self.message else RED
             message_surface = self.font.render(self.message, True, msg_color)
             self.screen.blit(message_surface, (10, 70))
 
-        instructions = "Померање: Лево/Десно стрелице (или A/D). Потврда: Space/Enter."
+        instructions = "Move: Left/Right arrows (or A/D). Confirm: Space/Enter."
         inst_surface = self.font.render(instructions, True, BLACK)
         self.screen.blit(inst_surface, (self.screen.get_width() // 2 - inst_surface.get_width() // 2, 0))
 
         if self.letter_spawner.current_word:
-            word_surface = self.font.render(f"Тренутна реч: {self.letter_spawner.current_word}", True, BLACK)
+            word_surface = self.font.render(f"Current word: {self.letter_spawner.current_word}", True, BLACK)
             self.screen.blit(word_surface, (self.screen.get_width() // 2 - word_surface.get_width() // 2, inst_surface.get_height()))
 
         if self.game_over:
-            go_surface = self.big_font.render("ИГРА ЈЕ ЗАВРШЕНА", True, RED)
+            go_surface = self.big_font.render("GAME OVER", True, RED)
             self.screen.blit(go_surface, ((self.screen.get_width() - go_surface.get_width()) / 2, self.screen.get_height() / 2))
-            prompt_surface = self.font.render("Притисните K да изађете", True, RED)
+            prompt_surface = self.font.render("Press K to exit", True, RED)
             self.screen.blit(prompt_surface, ((self.screen.get_width() - prompt_surface.get_width()) / 2, self.screen.get_height() / 2 + 50))
 
         pygame.display.flip()

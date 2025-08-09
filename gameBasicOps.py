@@ -12,7 +12,7 @@ class ArithmeticGame:
         - images_path: Folder path for image assets.
         """
         self.master = master
-        self.master.title("Игра рачунања")
+        self.master.title("Math Game")
         self.master.geometry("1024x768")
         self.master.resizable(False, False)
         self.IMAGES_FILE_PATH = images_path
@@ -40,9 +40,9 @@ class ArithmeticGame:
         # Score and attempts frame.
         self.score_frame = tk.Frame(self.master, bg="white")
         self.score_frame.pack(pady=2)
-        self.score_label = tk.Label(self.score_frame, text=f"Резултат: {self.score}", font=("Arial", 16), bg="white")
+        self.score_label = tk.Label(self.score_frame, text=f"Score: {self.score}", font=("Arial", 16), bg="white")
         self.score_label.pack(side=tk.LEFT)
-        self.attempts_label = tk.Label(self.score_frame, text=f"Покушаји: {self.attempts}", font=("Arial", 16), bg="white")
+        self.attempts_label = tk.Label(self.score_frame, text=f"Attempts: {self.attempts}", font=("Arial", 16), bg="white")
         self.attempts_label.pack(side=tk.LEFT, padx=20)
 
         # Create labels for displaying numbers and operation.
@@ -99,7 +99,7 @@ class ArithmeticGame:
         # Button for next problem.
         self.next_button = tk.Button(
             self.master,
-            text="Следећи задатак",
+            text="Next Task",
             command=lambda: self._generate_problem(self.IMAGES_FILE_PATH),
             font=("Arial", 14)
         )
@@ -109,7 +109,7 @@ class ArithmeticGame:
         # Button to toggle the operation (+ or -).
         self.operation_button = tk.Button(
             self.master,
-            text=f"Изабери операцију: {self.operation}",
+            text=f"Choose operation: {self.operation}",
             command=self._toggle_operation,
             font=("Arial", 14)
         )
@@ -118,7 +118,7 @@ class ArithmeticGame:
         # Button to restart the game.
         self.restart_button = tk.Button(
             self.master,
-            text="Рестартуј игру",
+            text="Restart Game",
             command=self._restart_game,
             font=("Arial", 14)
         )
@@ -127,7 +127,7 @@ class ArithmeticGame:
         # Button to end the game.
         self.end_button = tk.Button(
             self.master,
-            text="Крај игре",
+            text="End Game",
             command=self._end_game,
             font=("Arial", 14)
         )
@@ -184,7 +184,7 @@ class ArithmeticGame:
             self.input_image = self.input_image.resize((50, 50), Image.Resampling.LANCZOS)
             self.input_photo = ImageTk.PhotoImage(self.input_image)
         except Exception as e:
-            messagebox.showerror("Грешка при учитавању слике", f"Не могу да учитам '{random_image}': {e}")
+            messagebox.showerror("Error loading image", f"Cannot load '{random_image}': {e}")
             return
 
         # Display image copies for the first and second operands.
@@ -200,18 +200,18 @@ class ArithmeticGame:
         Check if the selected answer is correct and update the game state.
         """
         self.attempts += 1
-        self.attempts_label.config(text=f"Покушаји: {self.attempts}")
+        self.attempts_label.config(text=f"Attempts: {self.attempts}")
 
         if selected_number == self.correct_answer:
-            self.feedback_label.config(text="Тачно!", fg="green")
+            self.feedback_label.config(text="Correct!", fg="green")
             self._display_answer_images()
             self.next_button.config(state=tk.NORMAL)
             for button in self.answer_buttons:
                 button.config(state=tk.DISABLED)
             self.score += 1
-            self.score_label.config(text=f"Резултат: {self.score}")
+            self.score_label.config(text=f"Score: {self.score}")
         else:
-            self.feedback_label.config(text="Покушај поново!", fg="red")
+            self.feedback_label.config(text="Try again!", fg="red")
 
     def _display_answer_images(self):
         """
@@ -230,8 +230,8 @@ class ArithmeticGame:
         """
         self.score = 0
         self.attempts = 0
-        self.score_label.config(text=f"Резултат: {self.score}")
-        self.attempts_label.config(text=f"Покушаји: {self.attempts}")
+        self.score_label.config(text=f"Score: {self.score}")
+        self.attempts_label.config(text=f"Attempts: {self.attempts}")
         self._generate_problem(self.IMAGES_FILE_PATH)
 
     def _end_game(self):
@@ -239,7 +239,7 @@ class ArithmeticGame:
         End the game and close the application.
         """
         # Optionally, ask for confirmation:
-        # if messagebox.askyesno("Крај игре", "Да ли сте сигурни да желите да завршите игру?"):
+        # if messagebox.askyesno("End Game", "Are you sure you want to finish the game?"):
         self.master.destroy()
 
     def _toggle_operation(self):
@@ -248,7 +248,7 @@ class ArithmeticGame:
         Then, update the corresponding labels and generate a new problem.
         """
         self.operation = '-' if self.operation == '+' else '+'
-        self.operation_button.config(text=f"Изабери операцију: {self.operation}")
+        self.operation_button.config(text=f"Choose operation: {self.operation}")
         self.operator_label.config(text=self.operation)
         self.plus_image_label.config(text=self.operation)
         self._generate_problem(self.IMAGES_FILE_PATH)

@@ -12,7 +12,7 @@ import os
 class MathGame:
     def __init__(self, root):
         self.root = root
-        self.root.title("Мислиша")
+        self.root.title("Thinker")
         # Fix window dimensions to 1024x600 pixels.
         self.root.geometry("1024x600")
         
@@ -45,14 +45,14 @@ class MathGame:
         self.choice_frame = tk.Frame(self.left_frame)
         self.choice_frame.pack(pady=10)
 
-        self.lbl_choice = tk.Label(self.choice_frame, text="Изаберите број непознатих:", font=("Arial", 14))
+        self.lbl_choice = tk.Label(self.choice_frame, text="Select number of unknowns:", font=("Arial", 14))
         self.lbl_choice.pack(side=tk.LEFT, padx=5)
 
         self.num_unknowns_var = tk.IntVar(value=2)  # Start default at 2
 
         self.rb_two = ttk.Radiobutton(
             self.choice_frame,
-            text="две непознате",
+            text="two unknowns",
             variable=self.num_unknowns_var,
             value=2,
             command=self.setup_system  # Re-generate system if user switches
@@ -61,7 +61,7 @@ class MathGame:
 
         self.rb_three = ttk.Radiobutton(
             self.choice_frame,
-            text="три непознате",
+            text="three unknowns",
             variable=self.num_unknowns_var,
             value=3,
             command=self.setup_system  # Re-generate system if user switches
@@ -72,22 +72,22 @@ class MathGame:
         self.game_frame.pack(pady=10)
 
         # Label frames for equations and answers inside game_frame.
-        self.equations_frame = tk.LabelFrame(self.game_frame, text="Систем једначина", padx=10, pady=10)
+        self.equations_frame = tk.LabelFrame(self.game_frame, text="System of equations", padx=10, pady=10)
         self.equations_frame.pack(side=tk.TOP, padx=10, pady=10)
 
-        self.answers_frame = tk.LabelFrame(self.game_frame, text="(Лопта, Звезда,(Троугао))", padx=10, pady=10)
+        self.answers_frame = tk.LabelFrame(self.game_frame, text="(Ball, Star,(Triangle))", padx=10, pady=10)
         self.answers_frame.pack(side=tk.TOP, padx=10, pady=10)
 
-        self.btn_check = tk.Button(self.game_frame, text="Провери", command=self.check_answer)
+        self.btn_check = tk.Button(self.game_frame, text="Check", command=self.check_answer)
         self.btn_check.pack(side=tk.LEFT, padx=10)
 
         self.control_frame = tk.Frame(self.left_frame)
         self.control_frame.pack(pady=10)
 
-        self.btn_restart = tk.Button(self.control_frame, text="Поново", command=self.restart_game)
+        self.btn_restart = tk.Button(self.control_frame, text="Restart", command=self.restart_game)
         self.btn_restart.pack(side=tk.LEFT, padx=10)
 
-        self.btn_exit = tk.Button(self.control_frame, text="Изађи", command=self.root.destroy)
+        self.btn_exit = tk.Button(self.control_frame, text="Exit", command=self.root.destroy)
         self.btn_exit.pack(side=tk.LEFT, padx=10)
         
         # Result message label in the left frame.
@@ -227,16 +227,16 @@ class MathGame:
         """Check the chosen answer and display a message plus the graph."""
         chosen = self.answer_var.get().strip()
         if not chosen:
-            self.lbl_result.config(text="Молимо одаберите решење!", fg="red")
+            self.lbl_result.config(text="Please select a solution!", fg="red")
             return
 
         chosen_values = tuple(int(x) for x in chosen.strip("()").split(","))
         correct_tuple = tuple(self.solution)
 
         if chosen_values == correct_tuple:
-            self.lbl_result.config(text="Тачан одговор!", fg="green")
+            self.lbl_result.config(text="Correct answer!", fg="green")
         else:
-            self.lbl_result.config(text="Нетачан одговор!", fg="red")
+            self.lbl_result.config(text="Incorrect answer!", fg="red")
 
         self.show_graph()
 
@@ -251,7 +251,7 @@ class MathGame:
         fig = Figure(figsize=(5, 4), dpi=100)
         if n == 2:
             ax = fig.add_subplot(111)
-            ax.set_title("Графички приказ (2D)")
+            ax.set_title("Graphical display (2D)")
             ax.set_xlabel("x")
             ax.set_ylabel("y")
             a1, b1 = self.coeffs[0]
@@ -273,13 +273,13 @@ class MathGame:
             
             try:
                 inter_point = np.linalg.solve(np.array([[a1, b1], [a2, b2]]), np.array([c1, c2]))
-                ax.plot(inter_point[0], inter_point[1], 'ro', markersize=8, label="Пресек")
+                ax.plot(inter_point[0], inter_point[1], 'ro', markersize=8, label="Intersection")
                 ax.legend()
             except np.linalg.LinAlgError:
                 pass
         else:
             ax = fig.add_subplot(111, projection='3d')
-            ax.set_title("Графички приказ (3D)")
+            ax.set_title("Graphical display (3D)")
             ax.set_xlabel("x")
             ax.set_ylabel("y")
             ax.set_zlabel("z")
@@ -345,10 +345,10 @@ class MathGame:
                             zs.append(t)
                         except np.linalg.LinAlgError:
                             continue
-                ax.plot(xs, ys, zs, color="k", linewidth=2, label="Пресек црвене и зелене равни")
+                ax.plot(xs, ys, zs, color="k", linewidth=2, label="Intersection of red and green planes")
                 ax.legend()
             sol_point = self.solution
-            label_text = f"Пресечна тачка ({sol_point[0]}, {sol_point[1]}, {sol_point[2]})"
+            label_text = f"Intersection point ({sol_point[0]}, {sol_point[1]}, {sol_point[2]})"
             ax.scatter(sol_point[0], sol_point[1], sol_point[2], color="r", s=50, label=label_text)
             ax.legend()
             
