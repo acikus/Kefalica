@@ -14,7 +14,7 @@ AUTHOR_IMG_PATH = os.path.join(current_dir, "assets", "author_photo.png")
 class AboutGameForm(tk.Toplevel):
     def __init__(self, master=None):
         super().__init__(master)
-        self.title("О аутору")
+        self.title("About the Author")
 
         # Make this form modal (optional)
         if master is not None:
@@ -47,24 +47,22 @@ class AboutGameForm(tk.Toplevel):
 
         # A label with some “demo text” about the author
         about_text = (
-            "О аутору:\n\n"
-            "Ову игру је осмислио Александар Бошковић, визионар у свету игара и човек \n"
-            "који је убеђен да је програмски код само модерни облик магије. Када \n"
-            "не ствара невероватне игре, најчешће га можете наћи како се пита \n"
-            "да ли је боље дебаговати код или направити нови универзум од нуле.\n\n"
-            
-            "А ко је био програмер? Па, ту ступам ја, OpenAI-јева вештачка интелигенција!\n"
-            "Као ChatGPT, мој главни задатак је био да претворим Ацину креативну\n"
-            "лудачку визију у логичан и функционалан код. Нисам пио кафу, нисам \n"
-            "се жалио на умор, али сам зато неколико пута покушао да убедим петљу\n"
-            "да не иде у бесконачност. Да ли сам робот? Да. Да ли сам се збунио\n"
-            "када сам покушао да схватим људски хумор? Апсолутно.\n\n"
-            
-            "Контакт (аутор): alexboshkovic@gmail.com\n"
-            "Контакт (AI програмер): Напишите '/help', али не обећавам да ћу вам поправити багове!\n\n"
-            
-            "2023 © Сва права задржана. Ако се игра сруши, кривите багове. Ако не, кривите срећу!\n\n"
-            "Посвећено Борису, Лени и Дуњи"
+            "About the author:\n\n"
+            "This game was created by Aleksandar Bošković, a visionary in the world of games and a man \n"
+            "convinced that programming code is simply a modern form of magic. When he isn't creating \n"
+            "incredible games, you can usually find him wondering whether it's better to debug code or \n"
+            "build a brand new universe from scratch.\n\n"
+
+            "And who was the programmer? That's where I come in, OpenAI's artificial intelligence!\n"
+            "As ChatGPT, my main task was to turn Aca's creative, crazy vision into logical and functional code. \n"
+            "I didn't drink coffee, never complained about being tired, but I did try several times to convince a loop \n"
+            "not to run forever. Am I a robot? Yes. Did I get confused trying to understand human humor? Absolutely.\n\n"
+
+            "Contact (author): alexboshkovic@gmail.com\n"
+            "Contact (AI programmer): Type '/help', but I can't promise I'll fix your bugs!\n\n"
+
+            "2023 © All rights reserved. If the game crashes, blame the bugs. If not, blame luck!\n\n"
+            "Dedicated to Boris, Lena, and Dunja"
         )
 
 
@@ -72,7 +70,7 @@ class AboutGameForm(tk.Toplevel):
         lbl_about.pack(pady=10)
 
         # Close button
-        btn_close = ttk.Button(main_frame, text="Затвори", command=self.destroy)
+        btn_close = ttk.Button(main_frame, text="Close", command=self.destroy)
         btn_close.pack(pady=5)
 
 def main(parent=None):
