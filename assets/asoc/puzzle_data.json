@@ -1,0 +1,212 @@
+[
+  {
+    "columns": {
+      "A": {
+        "icons": ["apple.png", "banana.png", "orange.png", "grapes.png"],
+        "solution": ["Fruit"]
+      },
+      "B": {
+        "icons": ["carrot.png", "broccoli.png", "corn.png", "tomato.png"],
+        "solution": ["Vegetables"]
+      },
+      "C": {
+        "icons": ["icecream.png", "cake.png", "cookie.png", "candy.png"],
+        "solution": ["Sweets"]
+      },
+      "D": {
+        "icons": ["juice.png", "milk.png", "water.png", "smoothie.png"],
+        "solution": ["Drinks"]
+      }
+    },
+    "final_solution": ["Food"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["dog.png", "cat.png", "hamster.png", "rabbit.png"],
+        "solution": ["Pets"]
+      },
+      "B": {
+        "icons": ["lion.png", "elephant.png", "giraffe.png", "monkey.png"],
+        "solution": ["Zoo"]
+      },
+      "C": {
+        "icons": ["penguin.png", "seal.png", "whale.png", "dolphin.png"],
+        "solution": ["Ocean"]
+      },
+      "D": {
+        "icons": ["eagle.png", "parrot.png", "owl.png", "duck.png"],
+        "solution": ["Birds"]
+      }
+    },
+    "final_solution": ["Animals"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["ball.png", "bat.png", "glove.png", "base.png"],
+        "solution": ["Baseball"]
+      },
+      "B": {
+        "icons": ["basketball.png", "hoop.png", "court.png", "jersey.png"],
+        "solution": ["Basketball"]
+      },
+      "C": {
+        "icons": ["soccer_ball.png", "goal.png", "field.png", "cleats.png"],
+        "solution": ["Soccer"]
+      },
+      "D": {
+        "icons": ["tennis_ball.png", "racket.png", "net.png", "court_lines.png"],
+        "solution": ["Tennis"]
+      }
+    },
+    "final_solution": ["Sports"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["sun.png", "cloud.png", "rainbow.png", "stars.png"],
+        "solution": ["Sky"]
+      },
+      "B": {
+        "icons": ["tree.png", "flower.png", "grass.png", "leaf.png"],
+        "solution": ["Plants"]
+      },
+      "C": {
+        "icons": ["mountain.png", "river.png", "beach.png", "forest.png"],
+        "solution": ["Nature"]
+      },
+      "D": {
+        "icons": ["rain.png", "snow.png", "wind.png", "lightning.png"],
+        "solution": ["Weather"]
+      }
+    },
+    "final_solution": ["Earth"]
+  },
+    {
+    "columns": {
+      "A": {
+        "icons": ["pencil.png", "notebook.png", "eraser.png", "ruler.png"],
+        "solution": ["School"]
+      },
+      "B": {
+        "icons": ["blocks.png", "teddy.png", "puzzle.png", "car_toy.png"],
+        "solution": ["Toys"]
+      },
+      "C": {
+        "icons": ["book.png", "crayons.png", "paint.png", "scissors.png"],
+        "solution": ["Art"]
+      },
+      "D": {
+        "icons": ["computer.png", "tablet.png", "robot.png", "gamepad.png"],
+        "solution": ["Technology"]
+      }
+    },
+    "final_solution": ["Learning"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["pirate.png", "knight.png", "astronaut.png", "superhero.png"],
+        "solution": ["Heroes"]
+      },
+      "B": {
+        "icons": ["wand.png", "dragon.png", "unicorn.png", "fairy.png"],
+        "solution": ["Magic"]
+      },
+      "C": {
+        "icons": ["treasure.png", "map.png", "compass.png", "key.png"],
+        "solution": ["Adventure"]
+      },
+      "D": {
+        "icons": ["castle.png", "spaceship.png", "submarine.png", "treehouse.png"],
+        "solution": ["Places"]
+      }
+    },
+    "final_solution": ["Fantasy"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["drums.png", "guitar.png", "piano.png", "trumpet.png"],
+        "solution": ["Instruments"]
+      },
+      "B": {
+        "icons": ["microphone.png", "dancer.png", "stage.png", "spotlight.png"],
+        "solution": ["Performance"]
+      },
+      "C": {
+        "icons": ["paintbrush.png", "canvas.png", "clay.png", "easel.png"],
+        "solution": ["Art"]
+      },
+      "D": {
+        "icons": ["camera.png", "movie.png", "puppet.png", "costume.png"],
+        "solution": ["Theater"]
+      }
+    },
+    "final_solution": ["Creative"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["bed.png", "lamp.png", "pillow.png", "blanket.png"],
+        "solution": ["Bedroom"]
+      },
+      "B": {
+        "icons": ["table.png", "chair.png", "plate.png", "fridge.png"],
+        "solution": ["Kitchen"]
+      },
+      "C": {
+        "icons": ["tv.png", "sofa.png", "carpet.png", "window.png"],
+        "solution": ["Living Room"]
+      },
+      "D": {
+        "icons": ["bathtub.png", "towel.png", "soap.png", "toothbrush.png"],
+        "solution": ["Bathroom"]
+      }
+    },
+    "final_solution": ["Home"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["t_shirt.png", "pants.png", "dress.png", "shoes.png"],
+        "solution": ["Clothes"]
+      },
+      "B": {
+        "icons": ["hat.png", "scarf.png", "gloves.png", "boots.png"],
+        "solution": ["Winter Wear"]
+      },
+      "C": {
+        "icons": ["swimsuit.png", "sunglasses.png", "sandals.png", "shorts.png"],
+        "solution": ["Summer Wear"]
+      },
+      "D": {
+        "icons": ["umbrella.png", "raincoat.png", "rubber_boots.png", "jacket.png"],
+        "solution": ["Rain Wear"]
+      }
+    },
+    "final_solution": ["Clothing"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["bus.png", "bike.png", "car.png", "scooter.png"],
+        "solution": ["Land"]
+      },
+      "B": {
+        "icons": ["airplane.png", "helicopter.png", "balloon.png", "rocket.png"],
+        "solution": ["Air"]
+      },
+      "C": {
+        "icons": ["ship.png", "boat.png", "submarine.png", "sailboat.png"],
+        "solution": ["Water"]
+      },
+      "D": {
+        "icons": ["train.png", "tram.png", "subway.png", "cable_car.png"],
+        "solution": ["Rail"]
+      }
+    },
+    "final_solution": ["Transport"]
+  }
+]

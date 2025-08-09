@@ -1,0 +1,73 @@
+ Volume in drive E is DATADRIVE1
+ Volume Serial Number is 1EEF-E918
+
+ Directory of E:\Aca\Kefalica\Kefalica\Kefalica\venv\src\assets\pairs
+
+20.02.2025.  14:01    <DIR>          .
+20.02.2025.  13:19    <DIR>          ..
+20.02.2025.  11:46            16 976 apple_0_ambulance.png
+20.02.2025.  11:46            16 268 apple_0_automobile.png
+20.02.2025.  11:46            19 376 apple_0_bus.png
+20.02.2025.  11:46            14 742 apple_0_fire_engine.png
+20.02.2025.  11:46            18 976 apple_0_minibus.png
+20.02.2025.  11:46            16 808 apple_0_police_car.png
+20.02.2025.  11:46            14 991 apple_0_racing_car.png
+20.02.2025.  11:46            18 036 apple_0_taxi.png
+20.02.2025.  11:46             8 193 apple_3_ambulance.png
+20.02.2025.  11:46             5 927 apple_3_bus.png
+20.02.2025.  11:42            12 415 emojidex_0_clock_face_four_thirty.png
+20.02.2025.  11:42            12 716 emojidex_0_clock_face_one_oclock.png
+20.02.2025.  11:42            12 381 emojidex_0_clock_face_one_thirty.png
+20.02.2025.  11:42            12 329 emojidex_0_clock_face_six_oclock.png
+20.02.2025.  11:42            13 047 emojidex_3_clock_face_four_oclock.png
+20.02.2025.  11:42            12 685 emojidex_3_clock_face_four_thirty.png
+20.02.2025.  11:42            12 843 emojidex_3_clock_face_six_thirty.png
+20.02.2025.  11:42            12 511 emojidex_3_clock_face_three_oclock.png
+20.02.2025.  11:42            12 492 emojidex_3_clock_face_twelve_oclock.png
+20.02.2025.  11:44            11 282 google_0_blowfish.png
+20.02.2025.  11:44            11 451 google_0_dolphin.png
+20.02.2025.  11:44             7 985 google_0_fish.png
+20.02.2025.  11:44            11 927 google_0_fishing_pole_and_fish.png
+20.02.2025.  11:44            10 507 google_0_shark.png
+20.02.2025.  11:44            11 935 google_0_tropical_fish.png
+20.02.2025.  11:44             9 553 google_0_whale.png
+20.02.2025.  11:44             6 852 google_3_fish.png
+20.02.2025.  14:01                 0 icons.txt
+20.02.2025.  11:43            15 404 lg_0_bouquet.png
+20.02.2025.  11:43            15 248 lg_0_cherry_blossom.png
+20.02.2025.  11:43            14 238 lg_0_hibiscus.png
+20.02.2025.  11:43            12 899 lg_0_rose.png
+20.02.2025.  11:43            15 337 lg_0_sunflower.png
+20.02.2025.  11:43            10 349 lg_0_tulip.png
+20.02.2025.  11:42             4 837 samsung_0_frowning_face_with_open_mouth.png
+20.02.2025.  11:42             6 280 samsung_0_hugging_face.png
+20.02.2025.  11:42             4 945 samsung_0_sleeping_face.png
+20.02.2025.  11:42             4 044 samsung_0_sleepy_face.png
+20.02.2025.  11:42             4 240 samsung_0_thinking_face.png
+20.02.2025.  11:42             5 016 samsung_0_weary_face.png
+20.02.2025.  11:42             4 989 samsung_2_angry_face.png
+20.02.2025.  11:42             4 775 samsung_2_disappointed_face.png
+20.02.2025.  11:42             5 150 samsung_2_kissing_face.png
+20.02.2025.  11:42             4 706 samsung_2_slightly_frowning_face.png
+20.02.2025.  11:42             4 594 samsung_3_fearful_face.png
+20.02.2025.  11:42             4 731 samsung_3_weary_face.png
+20.02.2025.  11:42            13 312 samsung_5_happy_face.png
+20.02.2025.  11:43             9 260 xemoji-one_0_flag_for_brazil.png
+20.02.2025.  11:43             6 895 xemoji-one_0_flag_for_china.png
+20.02.2025.  11:43             4 800 xemoji-one_0_flag_for_france.png
+20.02.2025.  11:43             4 803 xemoji-one_0_flag_for_germany.png
+20.02.2025.  11:43             3 689 xemoji-one_0_flag_for_japan.png
+20.02.2025.  13:48             3 820 xemoji-one_0_flag_for_serbia.png
+20.02.2025.  11:43             8 854 xemoji-one_0_flag_for_spain.png
+20.02.2025.  11:43             5 142 xemoji-one_0_flag_for_sweden.png
+20.02.2025.  11:43             8 279 xemoji-one_0_flag_for_united_kingdom.png
+20.02.2025.  11:43             6 950 xemoji-one_0_flag_for_united_states.png
+20.02.2025.  11:41             8 700 zgoogle_0_duck.png
+20.02.2025.  11:41            11 168 zgoogle_0_eagle.png
+20.02.2025.  11:41             8 166 zgoogle_0_front_facing_baby_chick.png
+20.02.2025.  11:41            11 042 zgoogle_0_owl.png
+20.02.2025.  11:41             7 393 zgoogle_0_penguin.png
+20.02.2025.  11:41            12 912 zgoogle_0_rooster.png
+20.02.2025.  11:41            14 363 zgoogle_0_turkey.png
+              64 File(s)        636 534 bytes
+               2 Dir(s)  170 627 223 552 bytes free

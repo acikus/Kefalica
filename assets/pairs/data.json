@@ -1,0 +1,345 @@
+[
+  {
+    "image_name": "1_ambulance.png",
+    "english_label": "ambulance",
+    "serbian_label": "хитна помоћ",
+    "category": 1
+  },
+  {
+    "image_name": "1_automobile.png",
+    "english_label": "automobile",
+    "serbian_label": "аутомобил",
+    "category": 1
+  },
+  {
+    "image_name": "1_bus.png",
+    "english_label": "bus",
+    "serbian_label": "аутобус",
+    "category": 1
+  },
+  {
+    "image_name": "1_fire_engine.png",
+    "english_label": "fire engine",
+    "serbian_label": "ватрогасно возило",
+    "category": 1
+  },
+  {
+    "image_name": "1_minibus.png",
+    "english_label": "minibus",
+    "serbian_label": "минибус",
+    "category": 1
+  },
+  {
+    "image_name": "1_police_car.png",
+    "english_label": "police car",
+    "serbian_label": "полицијски ауто",
+    "category": 1
+  },
+  {
+    "image_name": "1_racing_car.png",
+    "english_label": "racing car",
+    "serbian_label": "тркачки ауто",
+    "category": 1
+  },
+  {
+    "image_name": "1_taxi.png",
+    "english_label": "taxi",
+    "serbian_label": "такси",
+    "category": 1
+  },
+   
+  {
+    "image_name": "2_clock_face_four_thirty.png",
+    "english_label": "four thirty",
+    "serbian_label": "четири и тридесет",
+    "category": 2
+  },
+  {
+    "image_name": "2_clock_face_one_oclock.png",
+    "english_label": "one o'clock",
+    "serbian_label": "један сат",
+    "category": 2
+  },
+  {
+    "image_name": "2_clock_face_one_thirty.png",
+    "english_label": "one thirty",
+    "serbian_label": "један и тридесет",
+    "category": 2
+  },
+  {
+    "image_name": "2_clock_face_six_oclock.png",
+    "english_label": "six o'clock",
+    "serbian_label": "шест сати",
+    "category": 2
+  },
+  {
+    "image_name": "2_clock_face_four_oclock.png",
+    "english_label": "four o'clock",
+    "serbian_label": "четири сата",
+    "category": 2
+  },
+  {
+    "image_name": "2_clock_face_six_thirty.png",
+    "english_label": "six thirty",
+    "serbian_label": "шест и тридесет",
+    "category": 2
+  },
+  {
+    "image_name": "2_clock_face_three_oclock.png",
+    "english_label": "three o'clock",
+    "serbian_label": "три сата",
+    "category": 2
+  },
+  {
+    "image_name": "2_clock_face_twelve_oclock.png",
+    "english_label": "twelve o'clock",
+    "serbian_label": "дванаест сати",
+    "category": 2
+  },
+  {
+    "image_name": "3_blowfish.png",
+    "english_label": "blowfish",
+    "serbian_label": "риба балон",
+    "category": 3
+  },
+  {
+    "image_name": "3_dolphin.png",
+    "english_label": "dolphin",
+    "serbian_label": "делфин",
+    "category": 3
+  },
+  {
+    "image_name": "3_fish.png",
+    "english_label": "fish",
+    "serbian_label": "риба",
+    "category": 3
+  },
+  {
+    "image_name": "3_fishing_pole_and_fish.png",
+    "english_label": "fishing pole and fish",
+    "serbian_label": "пецарски штап и риба",
+    "category": 3
+  },
+  {
+    "image_name": "3_shark.png",
+    "english_label": "shark",
+    "serbian_label": "ајкула",
+    "category": 3
+  },
+  {
+    "image_name": "3_nemo.png",
+    "english_label": "Nemo(clown fish)",
+    "serbian_label": "Немо(риба кловн)",
+    "category": 3
+  },
+  {
+    "image_name": "3_tropical_fish.png",
+    "english_label": "tropical fish",
+    "serbian_label": "тропска риба",
+    "category": 3
+  },
+  {
+    "image_name": "3_whale.png",
+    "english_label": "whale",
+    "serbian_label": "кит",
+    "category": 3
+  },
+ 
+  {
+    "image_name": "4_bouquet.png",
+    "english_label": "bouquet",
+    "serbian_label": "букет",
+    "category": 4
+  },
+  {
+    "image_name": "4_cherry_blossom.png",
+    "english_label": "cherry blossom",
+    "serbian_label": "цвет трешње",
+    "category": 4
+  },
+  {
+    "image_name": "4_hibiscus.png",
+    "english_label": "hibiscus",
+    "serbian_label": "хибискус",
+    "category": 4
+  },
+  {
+    "image_name": "4_rose.png",
+    "english_label": "rose",
+    "serbian_label": "ружа",
+    "category": 4
+  },
+  {
+    "image_name": "4_sunflower.png",
+    "english_label": "sunflower",
+    "serbian_label": "сунцокрет",
+    "category": 4
+  },
+  {
+    "image_name": "4_tulip.png",
+    "english_label": "tulip",
+    "serbian_label": "лала",
+    "category": 4
+  },  
+  {
+    "image_name": "4_daisy.png",
+    "english_label": "daisy",
+    "serbian_label": "бела рада",
+    "category": 4
+  },
+    {
+    "image_name": "4_orchid.png",
+    "english_label": "orchid",
+    "serbian_label": "орхидеја",
+    "category": 4
+  },
+
+  {
+    "image_name": "5_hugging_face.png",
+    "english_label": "hugging face",
+    "serbian_label": "лице које грли",
+    "category": 5
+  },
+
+  {
+    "image_name": "5_thinking_face.png",
+    "english_label": "thinking face",
+    "serbian_label": "лице које размишља",
+    "category": 5
+  },
+  {
+    "image_name": "5_weary_face.png",
+    "english_label": "weary face",
+    "serbian_label": "уморно лице",
+    "category": 5
+  },
+  {
+    "image_name": "5_angry_face.png",
+    "english_label": "angry face",
+    "serbian_label": "љуто лице",
+    "category": 5
+  },
+  {
+    "image_name": "5_disappointed_face.png",
+    "english_label": "disappointed face",
+    "serbian_label": "разочарано лице",
+    "category": 5
+  },
+ 
+  {
+    "image_name": "5_slightly_frowning_face.png",
+    "english_label": "slightly frowning face",
+    "serbian_label": "благо намрштено лице",
+    "category": 5
+  },
+  {
+    "image_name": "5_fearful_face.png",
+    "english_label": "fearful face",
+    "serbian_label": "уплашено лице",
+    "category": 5
+  },
+ 
+  {
+    "image_name": "5_happy_face.png",
+    "english_label": "happy face",
+    "serbian_label": "срећно лице",
+    "category": 5
+  },
+  {
+    "image_name": "6_flag_for_brazil.png",
+    "english_label": "flag for brazil",
+    "serbian_label": "застава за бразил",
+    "category": 6
+  },
+  {
+    "image_name": "6_flag_for_china.png",
+    "english_label": "flag for china",
+    "serbian_label": "застава за кину",
+    "category": 6
+  },
+  {
+    "image_name": "6_flag_for_france.png",
+    "english_label": "flag for france",
+    "serbian_label": "застава за француску",
+    "category": 6
+  },
+  {
+    "image_name": "6_flag_for_germany.png",
+    "english_label": "flag for germany",
+    "serbian_label": "застава за немачку",
+    "category": 6
+  },
+  {
+    "image_name": "6_flag_for_japan.png",
+    "english_label": "flag for japan",
+    "serbian_label": "застава за јапан",
+    "category": 6
+  },
+  {
+    "image_name": "6_flag_for_serbia.png",
+    "english_label": "flag for serbia",
+    "serbian_label": "застава за србију",
+    "category": 6
+  },
+
+  {
+    "image_name": "6_flag_for_united_kingdom.png",
+    "english_label": "flag for united kingdom",
+    "serbian_label": "застава за уједињено краљевство",
+    "category": 6
+  },
+  {
+    "image_name": "6_flag_for_united_states.png",
+    "english_label": "flag for united states",
+    "serbian_label": "застава за сједињене државе",
+    "category": 6
+  },
+  {
+    "image_name": "7_duck.png",
+    "english_label": "duck",
+    "serbian_label": "патка",
+    "category": 7
+  },
+  {
+    "image_name": "7_eagle.png",
+    "english_label": "eagle",
+    "serbian_label": "орао",
+    "category": 7
+  },
+  {
+    "image_name": "7_front_facing_baby_chick.png",
+    "english_label": "baby chick",
+    "serbian_label": "пиле",
+    "category": 7
+  },
+  {
+    "image_name": "7_owl.png",
+    "english_label": "owl",
+    "serbian_label": "сова",
+    "category": 7
+  },
+  {
+    "image_name": "7_penguin.png",
+    "english_label": "penguin",
+    "serbian_label": "пингвин",
+    "category": 7
+  },
+  {
+    "image_name": "7_rooster.png",
+    "english_label": "rooster",
+    "serbian_label": "петао",
+    "category": 7
+  },
+  {
+    "image_name": "7_turkey.png",
+    "english_label": "turkey",
+    "serbian_label": "ћурка",
+    "category": 7
+  },
+    {
+    "image_name": "7_ljuta_ptica.png",
+    "english_label": "angry bird",
+    "serbian_label": "љута птица",
+    "category": 7
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "columns": {
+      "A": {
+        "icons": ["apple.png", "banana.png", "orange.png", "grapes.png"],
+        "srpski": ["jabuka.png", "banana.png", "pomorandža.png", "grožđe.png"],
+        "solution": ["VOĆE"]
+      },
+      "B": {
+        "icons": ["carrot.png", "broccoli.png", "corn.png", "tomato.png"],
+        "srpski": ["šargarepa.png", "brokoli.png", "kukuruz.png", "paradajz.png"],
+        "solution": ["POVRĆE"]
+      },
+      "C": {
+        "icons": ["icecream.png", "cake.png", "cookie.png", "candy.png"],
+        "srpski": ["sladoled.png", "torta.png", "keks.png", "bombona.png"],
+        "solution": ["SLATKIŠI"]
+      },
+      "D": {
+        "icons": ["juice.png", "milk.png", "water.png", "smoothie.png"],
+        "srpski": ["sok.png", "mleko.png", "voda.png", "smuti.png"],
+        "solution": ["PIĆE"]
+      }
+    },
+    "final_solution": ["HRANA"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["dog.png", "cat.png", "hamster.png", "rabbit.png"],
+        "srpski": ["pas.png", "mačka.png", "hrčak.png", "zec.png"],
+        "solution": ["KUĆNI LJUBIMCI"]
+      },
+      "B": {
+        "icons": ["lion.png", "elephant.png", "giraffe.png", "monkey.png"],
+        "srpski": ["lav.png", "slon.png", "žirafa.png", "majmun.png"],
+        "solution": ["ZOO"]
+      },
+      "C": {
+        "icons": ["penguin.png", "seal.png", "whale.png", "dolphin.png"],
+        "srpski": ["pingvin.png", "foka.png", "kit.png", "delfin.png"],
+        "solution": ["OCEAN"]
+      },
+      "D": {
+        "icons": ["eagle.png", "parrot.png", "owl.png", "duck.png"],
+        "srpski": ["orao.png", "papagaj.png", "sova.png", "patka.png"],
+        "solution": ["PTICE"]
+      }
+    },
+    "final_solution": ["ŽIVOTINJE"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["ball.png", "bat.png", "glove.png", "base.png"],
+        "srpski": ["lopta.png", "palica.png", "rukavica.png", "baza.png"],
+        "solution": ["BEJZBOL"]
+      },
+      "B": {
+        "icons": ["basketball.png", "hoop.png", "court.png", "jersey.png"],
+        "srpski": ["košarkaška_lopta.png", "obruč.png", "teren.png", "dres.png"],
+        "solution": ["KOŠARKA"]
+      },
+      "C": {
+        "icons": ["soccer_ball.png", "goal.png", "field.png", "cleats.png"],
+        "srpski": ["fudbalska_lopta.png", "gol.png", "teren.png", "kopačke.png"],
+        "solution": ["FUDBAL"]
+      },
+      "D": {
+        "icons": ["tennis_ball.png", "racket.png", "net.png", "court_lines.png"],
+        "srpski": ["teniska_loptica.png", "reket.png", "mreža.png", "linije_terena.png"],
+        "solution": ["TENIS"]
+      }
+    },
+    "final_solution": ["SPORTOVI"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["sun.png", "cloud.png", "rainbow.png", "stars.png"],
+        "srpski": ["sunce.png", "oblak.png", "duga.png", "zvezde.png"],
+        "solution": ["NEBO"]
+      },
+      "B": {
+        "icons": ["tree.png", "flower.png", "grass.png", "leaf.png"],
+        "srpski": ["drvo.png", "cveće.png", "trava.png", "list.png"],
+        "solution": ["BILJKE"]
+      },
+      "C": {
+        "icons": ["mountain.png", "river.png", "beach.png", "forest.png"],
+        "srpski": ["planina.png", "reka.png", "plaža.png", "šuma.png"],
+        "solution": ["PRIRODA"]
+      },
+      "D": {
+        "icons": ["rain.png", "snow.png", "wind.png", "lightning.png"],
+        "srpski": ["kiša.png", "sneg.png", "vetar.png", "munja.png"],
+        "solution": ["VREME"]
+      }
+    },
+    "final_solution": ["ZEMLJA"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["pencil.png", "notebook.png", "eraser.png", "ruler.png"],
+        "srpski": ["olovka.png", "sveska.png", "gumica.png", "lenjir.png"],
+        "solution": ["ŠKOLA"]
+      },
+      "B": {
+        "icons": ["blocks.png", "teddy.png", "puzzle.png", "car_toy.png"],
+        "srpski": ["kockice.png", "meda.png", "slagalica.png", "autić.png"],
+        "solution": ["IGRAČKE"]
+      },
+      "C": {
+        "icons": ["book.png", "crayons.png", "paint.png", "scissors.png"],
+        "srpski": ["knjiga.png", "bojice.png", "boja.png", "makaze.png"],
+        "solution": ["UMETNOST"]
+      },
+      "D": {
+        "icons": ["computer.png", "tablet.png", "robot.png", "gamepad.png"],
+        "srpski": ["računar.png", "tablet.png", "robot.png", "džojped.png"],
+        "solution": ["TEHNOLOGIJA"]
+      }
+    },
+    "final_solution": ["UČENJE"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["pirate.png", "knight.png", "astronaut.png", "superhero.png"],
+        "srpski": ["pirat.png", "vitez.png", "astronaut.png", "superheroj.png"],
+        "solution": ["HEROJI"]
+      },
+      "B": {
+        "icons": ["wand.png", "dragon.png", "unicorn.png", "fairy.png"],
+        "srpski": ["štapić.png", "zmaj.png", "jednorog.png", "vila.png"],
+        "solution": ["MAGIJA"]
+      },
+      "C": {
+        "icons": ["treasure.png", "map.png", "compass.png", "key.png"],
+        "srpski": ["blago.png", "mapa.png", "kompas.png", "kljuć.png"],
+        "solution": ["AVANTURA"]
+      },
+      "D": {
+        "icons": ["castle.png", "spaceship.png", "submarine.png", "treehouse.png"],
+        "srpski": ["dvorac.png", "svemirski_brod.png", "podmornica.png", "kućica_na_drvetu.png"],
+        "solution": ["MESTA"]
+      }
+    },
+    "final_solution": ["FANTAZIJA"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["drums.png", "guitar.png", "piano.png", "trumpet.png"],
+        "srpski": ["bubnjevi.png", "gitara.png", "klavir.png", "truba.png"],
+        "solution": ["INSTRUMENTI"]
+      },
+      "B": {
+        "icons": ["microphone.png", "dancer.png", "stage.png", "spotlight.png"],
+        "srpski": ["mikrofon.png", "igrač.png", "scena.png", "reflektor.png"],
+        "solution": ["IZVOĐENJE"]
+      },
+      "C": {
+        "icons": ["paintbrush.png", "canvas.png", "clay.png", "easel.png"],
+        "srpski": ["četkica.png", "platno.png", "glina.png", "štafelaj.png"],
+        "solution": ["UMETNOST"]
+      },
+      "D": {
+        "icons": ["camera.png", "movie.png", "puppet.png", "costume.png"],
+        "srpski": ["kamera.png", "film.png", "lutka.png", "kostim.png"],
+        "solution": ["POZORIŠTE"]
+      }
+    },
+    "final_solution": ["KREATIVNO"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["bed.png", "lamp.png", "pillow.png", "blanket.png"],
+        "srpski": ["krevet.png", "lampa.png", "jastuk.png", "ćebe.png"],
+        "solution": ["SPAVAĆA SOBA"]
+      },
+      "B": {
+        "icons": ["table.png", "chair.png", "plate.png", "fridge.png"],
+        "srpski": ["sto.png", "stolica.png", "tanjir.png", "frižider.png"],
+        "solution": ["KUHINJA"]
+      },
+      "C": {
+        "icons": ["tv.png", "sofa.png", "carpet.png", "window.png"],
+        "srpski": ["televizor.png", "kauč.png", "tepih.png", "prozor.png"],
+        "solution": ["DNEVNA SOBA"]
+      },
+      "D": {
+        "icons": ["bathtub.png", "towel.png", "soap.png", "toothbrush.png"],
+        "srpski": ["kada.png", "peškir.png", "sapun.png", "četkica_za_zube.png"],
+        "solution": ["KUPATILO"]
+      }
+    },
+    "final_solution": ["DOM"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["t_shirt.png", "pants.png", "dress.png", "shoes.png"],
+        "srpski": ["majica.png", "pantalone.png", "haljina.png", "cipele.png"],
+        "solution": ["ODEĆA"]
+      },
+      "B": {
+        "icons": ["hat.png", "scarf.png", "gloves.png", "boots.png"],
+        "srpski": ["kapa.png", "šal.png", "rukavice.png", "čizme.png"],
+        "solution": ["ZIMSKA ODEĆA"]
+      },
+      "C": {
+        "icons": ["swimsuit.png", "sunglasses.png", "sandals.png", "shorts.png"],
+        "srpski": ["kupaći_kostim.png", "naočare_za_sunce.png", "sandale.png", "šorts.png"],
+        "solution": ["LETNJA ODEĆA"]
+      },
+      "D": {
+        "icons": ["umbrella.png", "raincoat.png", "rubber_boots.png", "jacket.png"],
+        "srpski": ["kišobran.png", "kabanica.png", "gumene_čizme.png", "jakna.png"],
+        "solution": ["KIŠNA ODEĆA"]
+      }
+    },
+    "final_solution": ["ODEĆA"]
+  },
+  {
+    "columns": {
+      "A": {
+        "icons": ["bus.png", "bike.png", "car.png", "scooter.png"],
+        "srpski": ["autobus.png", "bicikl.png", "auto.png", "skuter.png"],
+        "solution": ["KOPNENO"]
+      },
+      "B": {
+        "icons": ["airplane.png", "helicopter.png", "balloon.png", "rocket.png"],
+        "srpski": ["avion.png", "helikopter.png", "balon.png", "raketa.png"],
+        "solution": ["VAZDUH"]
+      },
+      "C": {
+        "icons": ["ship.png", "boat.png", "submarine.png", "sailboat.png"],
+        "srpski": ["brod.png", "čamac.png", "podmornica.png", "jedrilica.png"],
+        "solution": ["VODA"]
+      },
+      "D": {
+        "icons": ["train.png", "tram.png", "subway.png", "cable_car.png"],
+        "srpski": ["voz.png", "tramvaj.png", "metro.png", "žičara.png"],
+        "solution": ["ŠINE"]
+      }
+    },
+    "final_solution": ["TRANSPORT"]
+  }
+]

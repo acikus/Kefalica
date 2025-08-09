@@ -1,0 +1,40 @@
+ Volume in drive E is EXT2TB
+ Volume Serial Number is 0100-EB70
+
+ Directory of E:\Games\Kefalica\Kefalica\venv\src\assets\roadparts
+
+03/04/2025  10:33 PM    <DIR>          .
+03/04/2025  10:33 PM    <DIR>          ..
+03/04/2025  03:07 PM            14,636 bridge_horizontal.png
+03/04/2025  03:07 PM            15,421 bridge_vertical.png
+03/01/2025  06:41 PM            95,360 car.gif
+03/01/2025  11:46 PM         5,765,840 car_sound.wav
+03/04/2025  03:07 PM            11,520 crossroad.png
+03/04/2025  03:07 PM             2,167 horizontal.png
+03/04/2025  03:06 PM            27,023 obstacle_forest.png
+03/04/2025  03:07 PM            27,376 obstacle_railroad_bottom_left.png
+03/04/2025  03:07 PM            23,784 OBSTACLE_RAILROAD_HORIZONTAL.png
+03/04/2025  03:07 PM            26,360 obstacle_railroad_left_top.png
+03/04/2025  03:07 PM            27,724 obstacle_railroad_right_bottom.png
+03/04/2025  03:07 PM            31,733 obstacle_railroad_river_horizontal.png
+03/04/2025  03:07 PM            26,272 obstacle_railroad_top_right.png
+03/04/2025  03:07 PM            25,316 obstacle_railroad_vertical.png
+03/04/2025  03:07 PM             9,079 obstacle_river_horizontal.png
+03/04/2025  03:06 PM             9,280 obstacle_river_turn_bottom_left.png
+03/04/2025  03:06 PM             9,908 obstacle_river_turn_bottom_right.png
+03/04/2025  03:07 PM             7,984 obstacle_river_turn_top_left.png
+03/04/2025  03:07 PM             7,848 obstacle_river_turn_top_right.png
+03/04/2025  03:07 PM             8,895 obstacle_river_vertical.png
+03/04/2025  03:07 PM            25,909 obstacle_station.png
+03/04/2025  03:07 PM             6,656 obstacle_stone.png
+03/04/2025  03:07 PM             8,789 parking.png
+03/04/2025  10:33 PM                 0 parts.txt
+03/04/2025  03:07 PM            24,270 RAILROAD_CROSSING_HORIZONTAL.png
+03/04/2025  03:07 PM            23,744 RAILROAD_CROSSING_VERTICAL.png
+03/04/2025  10:18 PM            13,944 turn_bottom_left.png
+03/04/2025  10:18 PM            14,324 turn_left_top.png
+03/04/2025  10:18 PM            13,822 turn_right_bottom.png
+03/04/2025  10:18 PM            14,366 turn_top_right.png
+03/04/2025  03:07 PM             2,403 vertical.png
+              31 File(s)      6,321,753 bytes
+               2 Dir(s)  639,795,576,832 bytes free

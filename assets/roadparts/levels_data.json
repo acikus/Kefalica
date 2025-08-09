@@ -1,0 +1,7661 @@
+{
+  "levels": [
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 2,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 5,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "CROSSROAD",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 4,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 1
+        },
+        {
+          "x": 7,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 2,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "BRIDGE_VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 1
+        },
+        {
+          "x": 6,
+          "y": 1
+        },
+        {
+          "x": 7,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 3,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "BRIDGE_VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 2,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 1
+        },
+        {
+          "x": 7,
+          "y": 1
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 2,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "CROSSROAD",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "BRIDGE_VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 1,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_LEFT_TOP",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "BRIDGE_VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 1,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 1,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": false
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "type": "PARKING",
+          "missing": false
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 9,
+          "y": 5
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 1,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "BRIDGE_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "type": "PARKING",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 1
+        },
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 9,
+          "y": 5
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 1,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 1
+        },
+        {
+          "x": 7,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 0
+        },
+        {
+          "x": 7,
+          "y": 0
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 9,
+          "y": 3
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "RAILROAD_CROSSING_VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_LEFT_TOP",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 1
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 6,
+          "y": 1
+        },
+        {
+          "x": 6,
+          "y": 0
+        },
+        {
+          "x": 7,
+          "y": 0
+        },
+        {
+          "x": 8,
+          "y": 0
+        },
+        {
+          "x": 8,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 0,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "PARKING",
+          "missing": false
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "BRIDGE_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "RAILROAD_CROSSING_HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_LEFT_TOP",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_LEFT_TOP",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 5,
+          "y": 1
+        },
+        {
+          "x": 5,
+          "y": 2
+        },
+        {
+          "x": 5,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 6,
+          "y": 4
+        },
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "grid_width": 10,
+      "grid_height": 6,
+      "tiles": [
+        {
+          "x": 0,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": false
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 4,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 5,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 7,
+          "y": 0,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 0,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 0,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_RIGHT_BOTTOM",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "type": "OBSTACLE_RAILROAD_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 1,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 1,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 1,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "type": "OBSTACLE_RIVER_TURN_BOTTOM_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 2,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 3,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "type": "TURN_RIGHT_BOTTOM",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "type": "OBSTACLE_RIVER_TURN_TOP_LEFT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 0,
+          "y": 4,
+          "type": "TURN_BOTTOM_LEFT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "type": "CROSSROAD",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "type": "OBSTACLE_RAILROAD_VERTICAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "type": "VERTICAL",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "type": "OBSTACLE_FOREST",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "type": "OBSTACLE_STATION",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 0,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 1,
+          "y": 5,
+          "type": "TURN_LEFT_TOP",
+          "missing": true
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "type": "OBSTACLE_STONE",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_TOP_RIGHT",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_HORIZONTAL",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "type": "OBSTACLE_RAILROAD_LEFT_TOP",
+          "missing": false,
+          "isObstacle": true
+        },
+        {
+          "x": 7,
+          "y": 5,
+          "type": "TURN_TOP_RIGHT",
+          "missing": true
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "type": "HORIZONTAL",
+          "missing": true
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "type": "PARKING",
+          "missing": false
+        }
+      ],
+      "path": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 1,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        },
+        {
+          "x": 5,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 0
+        },
+        {
+          "x": 7,
+          "y": 0
+        },
+        {
+          "x": 8,
+          "y": 0
+        },
+        {
+          "x": 8,
+          "y": 1
+        },
+        {
+          "x": 8,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 1
+        },
+        {
+          "x": 9,
+          "y": 1
+        },
+        {
+          "x": 9,
+          "y": 2
+        },
+        {
+          "x": 9,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 4
+        },
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 9,
+          "y": 5
+        }
+      ]
+    }
+  ]
+}
