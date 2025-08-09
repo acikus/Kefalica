@@ -39,7 +39,7 @@ def normalize_serbian(s: str) -> str:
 class AsocijacijaIgra:
     def __init__(self, root):
         self.root = root
-        self.root.title("Asocijacije -učimo engleski")
+        self.root.title("Associations - Learn English")
 
         # Load background image.
         self.bg_image = Image.open(BACKGROUND_IMAGE_PATH)
@@ -60,8 +60,13 @@ class AsocijacijaIgra:
         self.frame_window = self.canvas.create_window(0, 50, window=self.main_frame, anchor="nw", width=1024)
 
         # Widgets in the main_frame.
-        self.score_label = tk.Label(self.main_frame, text=f"Rezultat: {self.score}", font=("Impact", 14),
-                                    fg="blue", bg="lightblue")
+        self.score_label = tk.Label(
+            self.main_frame,
+            text=f"Score: {self.score}",
+            font=("Impact", 14),
+            fg="blue",
+            bg="lightblue",
+        )
         self.score_label.pack(pady=5)
 
         self.info_label = tk.Label(self.main_frame, text="", font=("Arial", 14), fg="black", bg="lightblue")
@@ -70,7 +75,7 @@ class AsocijacijaIgra:
         self.puzzle_frame = tk.Frame(self.main_frame, bg="lightblue")
         self.puzzle_frame.pack()
 
-        self.next_game_button = tk.Button(self.main_frame, text="Sledeća igra", command=self._next_game)
+        self.next_game_button = tk.Button(self.main_frame, text="Next Puzzle", command=self._next_game)
         self.next_game_button.pack(pady=5)
         self.next_game_button.config(state="disabled")
 
@@ -159,10 +164,10 @@ class AsocijacijaIgra:
         final_frame = tk.Frame(self.puzzle_frame, pady=20, bg="lightblue")
         final_frame.grid(row=1, columnspan=4)
 
-        tk.Label(final_frame, text="Konačno rešenje:", font=("Arial", 12), bg="lightblue").pack()
+        tk.Label(final_frame, text="Final answer:", font=("Arial", 12), bg="lightblue").pack()
         self.final_entry = tk.Entry(final_frame)
         self.final_entry.pack(pady=2)
-        final_btn = tk.Button(final_frame, text="Potvrdi", command=self._check_final_solution)
+        final_btn = tk.Button(final_frame, text="Submit", command=self._check_final_solution)
         final_btn.pack(pady=2)
 
     def _normalize_input(self, text: str) -> str:
@@ -211,14 +216,14 @@ class AsocijacijaIgra:
 
                 self.solved_columns[col] = True
                 self.info_label.config(
-                    text=f"Kolona {col} je rešena! +{points_for_column} poena.",
+                    text=f"Column {col} solved! +{points_for_column} points.",
                     fg="green"
                 )
                 self._reveal_all_in_column(col)
             else:
-                self.info_label.config(text="Kolona je već rešena.", fg="orange")
+                self.info_label.config(text="Column already solved.", fg="orange")
         else:
-            self.info_label.config(text="Netačno rešenje za kolonu.", fg="red")
+            self.info_label.config(text="Incorrect column answer.", fg="red")
 
     def _check_final_solution(self):
         if not self.final_solved:
@@ -242,7 +247,7 @@ class AsocijacijaIgra:
                 self._update_score()
 
                 self.info_label.config(
-                    text=f"Bravo! Krajnje rešenje je: {valid_final_answers[0]} (+{total_final_points} poena)",
+                    text=f"Bravo! Final answer is: {valid_final_answers[0]} (+{total_final_points} points)",
                     fg="green"
                 )
 
@@ -256,31 +261,31 @@ class AsocijacijaIgra:
 
                 self.next_game_button.config(state="normal")
             else:
-                self.info_label.config(text="Netačno krajnje rešenje.", fg="red")
+                self.info_label.config(text="Incorrect final answer.", fg="red")
         else:
-            self.info_label.config(text="Krajnje rešenje je već pogođeno.", fg="orange")
+            self.info_label.config(text="Final answer already guessed.", fg="orange")
 
     def _update_score(self):
-        self.score_label.config(text=f"Rezultat: {self.score}")
+        self.score_label.config(text=f"Score: {self.score}")
 
     def _next_game(self):
         self.puzzle_index += 1
         if self.puzzle_index < len(puzzle_data):
             self._load_puzzle(self.puzzle_index)
         else:
-            self.info_label.config(text="Nema više igara!", fg="blue")
+            self.info_label.config(text="No more puzzles!", fg="blue")
             self.next_game_button.config(state="disabled")
 
 def main(parent=None):
     if parent is None:
         root = tk.Tk()
-        root.title("Asocijacije")
+        root.title("Associations")
         root.resizable(True, True)
         app = AsocijacijaIgra(root)
         root.mainloop()
     else:
         top = tk.Toplevel(parent)
-        top.title("Asocijacije")
+        top.title("Associations")
         top.resizable(True, True)
         top.grab_set()
         top.focus_set()

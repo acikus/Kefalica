@@ -272,23 +272,23 @@ class MainGameLauncher(tk.Tk):
                                             BTN_WIDTH_PX, BTN_HEIGHT_PX)
         # Each tuple: (Button Text, game launch function, Row, Column)
         buttons_info = [
-            ("Погоди ко сам", lambda: self.run_game(lambda: launch_pogodi(self)), 1, 0),
-            ("Меморија", lambda: self.run_game(lambda: launch_memory_game(self)), 1, 1),
-            ("Матадор", lambda: self.run_game(lambda: launch_shooter(self)), 1, 2),
-            ("Асоцијације", lambda: self.run_game(lambda: launch_asocijacije(self)), 1, 3),
-            ("Бојанка", lambda: self.run_game(lambda: launch_coloring(self)), 2, 0),
-            ("Програмер", lambda: self.run_game(lambda: launch_program(self)), 2, 1),
-            ("Судоку", lambda: self.run_game(lambda: launch_emoji_sudoku(self)), 2, 2),
-            ("Речи", lambda: self.run_game(lambda: launch_words(self)), 2, 3),
-            ("Слагалица", lambda: self.run_game(lambda: launch_puzzle(self)), 3, 0),
-            ("Нестала слова", lambda: self.run_game(lambda: launch_recenice_game(self)), 3, 1),
-            ("Сабирам и одузимам", lambda: self.run_game(lambda: launch_basicops(self)), 3, 2),
-            ("Кефалица", lambda: self.run_game(lambda: launch_main_game(self)), 3, 3),
-            ("Коцкице", lambda: self.run_game(lambda: launch_kocke_game(self)), 4, 1),
-            ("Сортирање", lambda: self.run_game(lambda: launch_sort_game(self)), 4, 2),
-            ("Спајалица", lambda: self.run_game(lambda: launch_position_game(self)), 4, 3),
-            ("Змије и мердевине", lambda: self.run_game(lambda: launch_snake_game(self)), 4, 0)
-           
+            ("Guess Who I Am", lambda: self.run_game(lambda: launch_pogodi(self)), 1, 0),
+            ("Memory", lambda: self.run_game(lambda: launch_memory_game(self)), 1, 1),
+            ("Mathador", lambda: self.run_game(lambda: launch_shooter(self)), 1, 2),
+            ("Associations", lambda: self.run_game(lambda: launch_asocijacije(self)), 1, 3),
+            ("Coloring", lambda: self.run_game(lambda: launch_coloring(self)), 2, 0),
+            ("Programmer", lambda: self.run_game(lambda: launch_program(self)), 2, 1),
+            ("Sudoku", lambda: self.run_game(lambda: launch_emoji_sudoku(self)), 2, 2),
+            ("Words", lambda: self.run_game(lambda: launch_words(self)), 2, 3),
+            ("Puzzle", lambda: self.run_game(lambda: launch_puzzle(self)), 3, 0),
+            ("Missing Letters", lambda: self.run_game(lambda: launch_recenice_game(self)), 3, 1),
+            ("Add and Subtract", lambda: self.run_game(lambda: launch_basicops(self)), 3, 2),
+            ("Kefalica", lambda: self.run_game(lambda: launch_main_game(self)), 3, 3),
+            ("Dice", lambda: self.run_game(lambda: launch_kocke_game(self)), 4, 1),
+            ("Sorting", lambda: self.run_game(lambda: launch_sort_game(self)), 4, 2),
+            ("Connect", lambda: self.run_game(lambda: launch_position_game(self)), 4, 3),
+            ("Snakes and Ladders", lambda: self.run_game(lambda: launch_snake_game(self)), 4, 0)
+
         ]
 
         # Create game buttons and store references.
@@ -309,7 +309,7 @@ class MainGameLauncher(tk.Tk):
             self.game_buttons.append(btn)
         about_btn = TransparentButton(
             self,
-            text="О кефалици",
+            text="About Kefalica",
             command=lambda: launch_about(self),
             font=BTN_FONT,
             width=BTN_WIDTH_PX,
@@ -323,7 +323,7 @@ class MainGameLauncher(tk.Tk):
         # --- Exit Button (remains enabled) ---
         exit_btn = TransparentButton(
             self,
-            text="Излаз",
+            text="Exit",
             command=self.exit_app,
             font=BTN_FONT,
             width=BTN_WIDTH_PX,

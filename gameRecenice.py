@@ -13,7 +13,7 @@ class RecenicaIgra:
         :param putanja_bgr: Putanja do slike za pozadinu.
         """
         self.root = root
-        self.root.title("Нестала слова")
+        self.root.title("Missing Letters")
         self.root.geometry("1024x768")  # Fiksne dimenzije
         # Allow the window to be resized
         self.root.resizable(True, True)
@@ -51,12 +51,12 @@ class RecenicaIgra:
         self.frame_navigacija = tk.Frame(self.root, bg="white")
         self.frame_navigacija.pack(pady=10)
         self.btn_prethodni = tk.Button(
-            self.frame_navigacija, text="Претходна",
+            self.frame_navigacija, text="Previous",
             command=self.prethodni, font=("Arial", 12), bg="lightblue"
         )
         self.btn_prethodni.grid(row=0, column=0, padx=5)
         self.btn_sledeci = tk.Button(
-            self.frame_navigacija, text="Следећа",
+            self.frame_navigacija, text="Next",
             command=self.sledeci, font=("Arial", 12), bg="lightgreen",
             state=tk.DISABLED  # Onemogućeno dok rečenica nije tačna
         )
@@ -66,7 +66,7 @@ class RecenicaIgra:
         )
         self.lbl_progress.grid(row=0, column=2, padx=10)
         self.btn_zavrsi = tk.Button(
-            self.frame_navigacija, text="Заврши игру", font=("Arial", 12), bg="tomato",
+            self.frame_navigacija, text="Finish Game", font=("Arial", 12), bg="tomato",
             command=self.zavrsi_igru
         )
         self.btn_zavrsi.grid(row=0, column=3, padx=5)
@@ -91,7 +91,7 @@ class RecenicaIgra:
         """
         rezultati = []
         if not os.path.exists(putanja):
-            messagebox.showerror("Greška", f"Fajl {putanja} nije pronađen.")
+            messagebox.showerror("Error", f"File {putanja} not found.")
             return rezultati
 
         with open(putanja, "r", encoding="utf-8") as f:
@@ -224,9 +224,9 @@ class RecenicaIgra:
 
     def proveri_recenicu(self):
         """
-        Proverava da li je trenutni raspored izabranih reči tačan.
-        Ako su izabrane sve reči i redosled odgovara originalnoj rečenici,
-        omogućava se dugme 'Следећа'.
+        Checks whether the current arrangement of selected words is correct.
+        If all words are selected and in the proper order,
+        the 'Next' button is enabled.
         """
         if len(self.selected_buttons) != len(self.trenutna_recenica):
             self.btn_sledeci.config(state=tk.DISABLED)
@@ -255,7 +255,7 @@ class RecenicaIgra:
         """Ažurira prikaz napretka (Rečenica X od Y)."""
         indeks_prikaz = self.trenutni_indeks + 1
         self.lbl_progress.config(
-            text=f"Реченица {indeks_prikaz}/{self.ukupno_recenica}" if self.ukupno_recenica > 0 else "Нема реченица"
+            text=f"Sentence {indeks_prikaz}/{self.ukupno_recenica}" if self.ukupno_recenica > 0 else "No sentences"
         )
 
     def zavrsi_igru(self):
@@ -280,17 +280,17 @@ def main(parent=None):
 
     if parent is None:
         root = tk.Tk()
-        root.title("Recenica Igra")
+        root.title("Sentence Game")
         # Allow resizing of the main window
         root.resizable(True, True)
         if os.path.exists(putanja_fajla):
             app = RecenicaIgra(root, putanja_fajla, IMAGES_FILE_PATH, putanja_bgr)
             root.mainloop()
         else:
-            print("Nije izabran fajl, izlaz iz programa.")
+            print("No file selected, exiting program.")
     else:
         top = tk.Toplevel(parent)
-        top.title("Recenica Igra")
+        top.title("Sentence Game")
         # Allow maximizing/minimizing.
         top.resizable(True, True)
         top.grab_set()
@@ -301,7 +301,7 @@ def main(parent=None):
             RecenicaIgra(top, putanja_fajla, IMAGES_FILE_PATH, putanja_bgr)
             top.wait_window()
         else:
-            messagebox.showerror("Greška", "Fajl sa реченицама nije pronađen.")
+            messagebox.showerror("Error", "Sentence file not found.")
 
 if __name__ == "__main__":
     main()
