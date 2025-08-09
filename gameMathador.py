@@ -200,7 +200,7 @@ class SpaceShooter:
 
         # Create the display
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        pygame.display.set_caption("Матадор")
+        pygame.display.set_caption("Matador")
         self.clock = pygame.time.Clock()
 
         # Sounds
@@ -269,8 +269,8 @@ class SpaceShooter:
             self.screen.fill(BLACK)
 
     def draw_ui(self):
-        score_text = self.font.render(f"Резултат: {self.score}", True, WHITE)
-        health_text = self.font.render(f"Животи: {self.player.health}", True, WHITE)
+        score_text = self.font.render(f"Score: {self.score}", True, WHITE)
+        health_text = self.font.render(f"Lives: {self.player.health}", True, WHITE)
         self.screen.blit(score_text, (10, 10))
         self.screen.blit(health_text, (10, 50))
 
@@ -361,8 +361,8 @@ class SpaceShooter:
             # If game over, overlay
             if self.game_state == self.GAME_OVER:
                 self.screen.fill(ORANGE)
-                over_text = self.font.render("КРАЈ", True, BLACK)
-                restart_text = self.font.render("Р за рестарт, K за излаз", True, BLACK)
+                over_text = self.font.render("GAME OVER", True, BLACK)
+                restart_text = self.font.render("R to restart, K to exit", True, BLACK)
                 self.screen.blit(over_text, (SCREEN_WIDTH // 2 - 80, SCREEN_HEIGHT // 2 - 50))
                 self.screen.blit(restart_text, (SCREEN_WIDTH // 2 - 180, SCREEN_HEIGHT // 2))
 

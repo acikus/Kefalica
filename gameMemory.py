@@ -37,7 +37,7 @@ letter_to_color = {}   # mapping letter -> color
 class MemoryGame:
     def __init__(self, root):
         self.root = root
-        self.root.title("Меморија")
+        self.root.title("Memory")
         self.attempts = 0
         self.found_pairs = 0
         
@@ -57,19 +57,19 @@ class MemoryGame:
         self.control_frame = tk.Frame(self.root)
         self.control_frame.pack(fill="x", pady=5)
 
-        self.attempts_label = tk.Label(self.control_frame, text="Покушаја: 0", font=("Helvetica", 14))
+        self.attempts_label = tk.Label(self.control_frame, text="Attempts: 0", font=("Helvetica", 14))
         self.attempts_label.pack(side="left", padx=10)
 
-        self.timer_label = tk.Label(self.control_frame, text="Време: 0 с", font=("Helvetica", 14))
+        self.timer_label = tk.Label(self.control_frame, text="Time: 0 s", font=("Helvetica", 14))
         self.timer_label.pack(side="left", padx=10)
 
         self.info_label = tk.Label(self.control_frame, text="", font=("Helvetica", 14), fg="blue")
         self.info_label.pack(side="left", padx=10)
 
-        next_btn = tk.Button(self.control_frame, text="Следећа игра", font=("Helvetica", 12), command=self.reset_game)
+        next_btn = tk.Button(self.control_frame, text="Next Game", font=("Helvetica", 12), command=self.reset_game)
         next_btn.pack(side="left", padx=10)
 
-        close_btn = tk.Button(self.control_frame, text="Затвори", font=("Helvetica", 12), command=self.root.destroy)
+        close_btn = tk.Button(self.control_frame, text="Close", font=("Helvetica", 12), command=self.root.destroy)
         close_btn.pack(side="right", padx=10)
 
     def load_background(self):
@@ -148,7 +148,7 @@ class MemoryGame:
     def update_timer(self):
         if self.timer_running:
             elapsed = int(time.time() - self.start_time)
-            self.timer_label.config(text=f"Време: {elapsed} с")
+            self.timer_label.config(text=f"Time: {elapsed} s")
             self.update_timer_id = self.root.after(1000, self.update_timer)
 
     def stop_timer(self):
@@ -176,7 +176,7 @@ class MemoryGame:
 
         if len(self.clicked) == 2:
             self.attempts += 1
-            self.attempts_label.config(text=f"Покушаја: {self.attempts}")
+            self.attempts_label.config(text=f"Attempts: {self.attempts}")
             x1, x2 = self.clicked
             l1 = self.buttons[x1]["letter"]
             l2 = self.buttons[x2]["letter"]
@@ -194,7 +194,7 @@ class MemoryGame:
 
         if self.found_pairs == PAIRS:
             self.stop_timer()
-            self.info_label.config(text="Браво!")
+            self.info_label.config(text="Great!")
 
     def hide_letters(self, x1, x2):
         """Hide letters for unmatched pair and re-enable buttons."""
@@ -208,8 +208,8 @@ class MemoryGame:
         self.timer_running = False
         self.attempts = 0
         self.found_pairs = 0
-        self.attempts_label.config(text="Покушаја: 0")
-        self.timer_label.config(text="Време: 0 с")
+        self.attempts_label.config(text="Attempts: 0")
+        self.timer_label.config(text="Time: 0 s")
         self.info_label.config(text="")
         # Clear the old game board.
         for widget in self.main_frame.winfo_children():
@@ -226,7 +226,7 @@ def main(parent=None):
     if parent is None:
         # Standalone mode.
         root = tk.Tk()
-        root.title("Меморија")
+        root.title("Memory")
         root.geometry("800x650")
         root.resizable(True, True)
         MemoryGame(root)
@@ -234,7 +234,7 @@ def main(parent=None):
     else:
         # Modal mode.
         top = tk.Toplevel(parent)
-        top.title("Меморија")
+        top.title("Memory")
         top.geometry("600x650")
         top.resizable(True, True)
         MemoryGame(top)

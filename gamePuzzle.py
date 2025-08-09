@@ -8,7 +8,7 @@ import tempfile
 class PuzzleGameApp(tk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
-        self.master.title("Слагалица")
+        self.master.title("Puzzle")
         self.pack(expand=True, fill=tk.BOTH)
         
         # Variables for difficulty and custom image
@@ -41,12 +41,12 @@ class PuzzleGameApp(tk.Frame):
 
     def build_control_panel(self):
         # Title
-        tk.Label(self.left_frame, text="Изабери тежину", font=('Arial', 24)).pack(pady=5)
+        tk.Label(self.left_frame, text="Choose difficulty", font=('Arial', 24)).pack(pady=5)
 
         # Difficulty radio buttons
         rb_easy = tk.Radiobutton(
             self.left_frame,
-            text="ЛАКО",
+            text="EASY",
             font=('Arial', 20),
             variable=self.level_var,
             value='easy'
@@ -55,7 +55,7 @@ class PuzzleGameApp(tk.Frame):
 
         rb_hard = tk.Radiobutton(
             self.left_frame,
-            text="ТЕШКО",
+            text="HARD",
             font=('Arial', 20),
             variable=self.level_var,
             value='hard'
@@ -65,7 +65,7 @@ class PuzzleGameApp(tk.Frame):
         # Custom image label
         self.custom_image_label = tk.Label(
             self.left_frame, 
-            text="Није изабрана прилагођена слика", 
+            text="No custom image selected",
             font=('Arial', 12)
         )
         self.custom_image_label.pack(pady=5)
@@ -73,7 +73,7 @@ class PuzzleGameApp(tk.Frame):
         # Button to load a custom image
         btn_load_image = tk.Button(
             self.left_frame,
-            text="Учитај прилагођену слику",
+            text="Load custom image",
             font=('Arial', 14),
             command=self.load_custom_image
         )
@@ -82,7 +82,7 @@ class PuzzleGameApp(tk.Frame):
         # Button to start (or restart) the puzzle
         btn_start_puzzle = tk.Button(
             self.left_frame,
-            text="Почни слагалицу",
+            text="Start puzzle",
             font=('Arial', 14),
             command=self.start_puzzle
         )
@@ -101,7 +101,7 @@ class PuzzleGameApp(tk.Frame):
         # Move counter
         self.move_counter_label = tk.Label(
             self.left_frame, 
-            text="Покрета: 0", 
+            text="Moves: 0",
             font=('Arial', 12)
         )
         self.move_counter_label.pack(anchor="w", pady=5)
@@ -109,7 +109,7 @@ class PuzzleGameApp(tk.Frame):
         # Button: Next Image
         self.next_button = tk.Button(
             self.left_frame,
-            text="Следећа слика",
+            text="Next image",
             font=('Arial', 14),
             command=self.load_new_image,
             state=tk.DISABLED  # Disabled until a puzzle is started
@@ -119,7 +119,7 @@ class PuzzleGameApp(tk.Frame):
         # Close button
         btn_close = tk.Button(
             self.left_frame,
-            text="Затвори",
+            text="Close",
             font=('Arial', 14),
             command=self.master.destroy
         )
@@ -127,7 +127,7 @@ class PuzzleGameApp(tk.Frame):
 
     def load_custom_image(self):
         file_path = filedialog.askopenfilename(
-            title="Изабери слику",
+            title="Choose image",
             filetypes=[("Image Files", "*.png *.jpg *.jpeg *.gif")]
         )
         if not file_path:
@@ -136,12 +136,12 @@ class PuzzleGameApp(tk.Frame):
         try:
             img = Image.open(file_path)
         except Exception as e:
-            self.custom_image_label.config(text=f"Није могуће отворити слику:\n{e}")
+            self.custom_image_label.config(text=f"Cannot open image:\n{e}")
             return
 
         width, height = img.size
         if width != height:
-            self.custom_image_label.config(text="Молимо изаберите слику квадратног облика.")
+            self.custom_image_label.config(text="Please choose a square image.")
             return
 
         if width > 800:
@@ -151,14 +151,14 @@ class PuzzleGameApp(tk.Frame):
         try:
             img.save(temp_file, format="PNG")
         except Exception as e:
-            self.custom_image_label.config(text=f"Није могуће сачувати прилагођену слику:\n{e}")
+            self.custom_image_label.config(text=f"Cannot save custom image:\n{e}")
             temp_file.close()
             return
         temp_file.close()
 
         self.custom_image_path = temp_file.name
         filename = os.path.basename(file_path)
-        self.custom_image_label.config(text=f"Изабрана слика: {filename}")
+        self.custom_image_label.config(text=f"Selected image: {filename}")
 
     def start_puzzle(self):
         # Clear any previous puzzle
@@ -174,10 +174,10 @@ class PuzzleGameApp(tk.Frame):
 
         if self.load_images():
             self.create_puzzle()
-            self.status_label.config(text="Нова слагалица је учитана. Направите свој потез.")
+            self.status_label.config(text="New puzzle loaded. Make your move.")
             self.next_button.config(state=tk.NORMAL)
         else:
-            self.status_label.config(text="Грешка: Није могуће учитати слику.")
+            self.status_label.config(text="Error: Cannot load image.")
             self.next_button.config(state=tk.DISABLED)
 
     def load_images(self):
@@ -185,7 +185,7 @@ class PuzzleGameApp(tk.Frame):
             try:
                 self.original_image = Image.open(self.custom_image_path)
             except Exception as e:
-                print(f"Грешка при учитавању прилагођене слике: {e}")
+                print(f"Error loading custom image: {e}")
                 return False
         else:
             current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -207,7 +207,7 @@ class PuzzleGameApp(tk.Frame):
             self.rows = 4
             self.columns = 6
         else:
-            self.status_label.config(text="Непознат ниво тежине.")
+            self.status_label.config(text="Unknown difficulty level.")
             return False
 
         tile_width = self.original_image.size[0] // self.columns
@@ -266,7 +266,7 @@ class PuzzleGameApp(tk.Frame):
 
             if self.check_solution():
                 self.status_label.config(
-                    text="Честитамо! Слагалица је решена.\nКликните „Следећа слика“ за нову слагалицу."
+                    text="Congratulations! The puzzle is solved.\nClick 'Next image' for a new puzzle."
                 )
                 for btn in self.buttons.values():
                     btn.config(state=tk.DISABLED)
@@ -284,7 +284,7 @@ class PuzzleGameApp(tk.Frame):
         return self.current_positions == self.correct_positions
 
     def update_move_counter(self):
-        self.move_counter_label.config(text=f"Покрета: {self.move_count}")
+        self.move_counter_label.config(text=f"Moves: {self.move_count}")
 
     def load_new_image(self):
         for btn in self.buttons.values():
@@ -302,9 +302,9 @@ class PuzzleGameApp(tk.Frame):
 
         if self.load_images():
             self.create_puzzle()
-            self.status_label.config(text="Учитава се нова слагалица. Направите свој потез.")
+            self.status_label.config(text="Loading new puzzle. Make your move.")
         else:
-            self.status_label.config(text="Грешка: Није могуће учитати слику.")
+            self.status_label.config(text="Error: Cannot load image.")
 
         # Restore custom image path so user can go back to the custom puzzle if needed.
         self.custom_image_path = old_custom_path
@@ -318,13 +318,13 @@ def main(parent=None):
     """
     if parent is None:
         root = tk.Tk()
-        root.title("Слагалица")
+        root.title("Puzzle")
         root.resizable(True, True)
         app = PuzzleGameApp(master=root)
         root.mainloop()
     else:
         top = tk.Toplevel(parent)
-        top.title("Слагалица")
+        top.title("Puzzle")
         top.resizable(True, True)
         app = PuzzleGameApp(master=top)
         top.wait_window(top)

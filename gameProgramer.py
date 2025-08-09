@@ -78,7 +78,7 @@ class StrawberryGridGame:
         self.screen_height = 768
 
         self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
-        pygame.display.set_caption("Програмер")
+        pygame.display.set_caption("Programmer")
 
         # Load images
         self.strawberry_img = self.load_image("strawberry.png", CELL_SIZE - 10)
@@ -269,13 +269,13 @@ class StrawberryGridGame:
         # Check for moving off the grid.
         if not (0 <= new_row < self.n and 0 <= new_col < self.n):
             self.game_lost = True
-            self.game_message = "Ударили сте у ивицу!"
+            self.game_message = "You hit the edge!"
             self.is_executing = False
             return
         # Check for moving into a rock.
         if self.grid[new_row][new_col] == CellType.ROCK:
             self.game_lost = True
-            self.game_message = "Ударили сте у камен!"
+            self.game_message = "You hit a rock!"
             self.is_executing = False
             return
         # Valid move.
@@ -325,10 +325,10 @@ class StrawberryGridGame:
                 if not self.game_lost:
                     if self.player_pos != [self.n - 1, self.n - 1]:
                         self.game_lost = True
-                        self.game_message = "Морате доћи до базе!"
+                        self.game_message = "You must reach the base!"
                     elif self.collected_strawberries < self.total_strawberries:
                         self.game_lost = True
-                        self.game_message = "Нисте покупили јагоде!"
+                        self.game_message = "You didn't collect the strawberries!"
                     else:
                         self.game_won = True
 
@@ -347,20 +347,20 @@ class StrawberryGridGame:
         panel_width = self.selected_commands_panel_width
         panel_height = self.screen_height
         pygame.draw.rect(self.screen, WHITE, [panel_x, panel_y, panel_width, panel_height])
-        title_text = self.font.render("Наредбе:", True, BLACK)
+        title_text = self.font.render("Commands:", True, BLACK)
         self.screen.blit(title_text, (panel_x + 10, panel_y + 10))
         # Start positions for drawing commands.
         command_x = panel_x + 10
         command_y = panel_y + 40
         for i, cmd in enumerate(self.command_sequence):
             if cmd == Command.TURN_LEFT:
-                text = "Лево"
+                text = "Left"
                 color = BLUE
             elif cmd == Command.TURN_RIGHT:
-                text = "Десно"
+                text = "Right"
                 color = RED
             else:
-                text = "Напред"
+                text = "Forward"
                 color = GREEN
 
             # Wrap to next column if exceeding panel bottom.
@@ -391,7 +391,7 @@ class StrawberryGridGame:
         # Turn Left Button
         turn_left_button = pygame.Rect(button_x, btn_start_y, BUTTON_WIDTH, BUTTON_HEIGHT)
         pygame.draw.rect(self.screen, BLUE, turn_left_button)
-        turn_left_button_text = self.font.render("Лево", True, WHITE)
+        turn_left_button_text = self.font.render("Left", True, WHITE)
         self.screen.blit(turn_left_button_text, (
             turn_left_button.x + (BUTTON_WIDTH - turn_left_button_text.get_width()) // 2,
             turn_left_button.y + (BUTTON_HEIGHT - turn_left_button_text.get_height()) // 2
@@ -400,7 +400,7 @@ class StrawberryGridGame:
         # Turn Right Button
         turn_right_button = pygame.Rect(button_x, btn_start_y + (BUTTON_HEIGHT + BUTTON_MARGIN), BUTTON_WIDTH, BUTTON_HEIGHT)
         pygame.draw.rect(self.screen, RED, turn_right_button)
-        turn_right_button_text = self.font.render("Десно", True, WHITE)
+        turn_right_button_text = self.font.render("Right", True, WHITE)
         self.screen.blit(turn_right_button_text, (
             turn_right_button.x + (BUTTON_WIDTH - turn_right_button_text.get_width()) // 2,
             turn_right_button.y + (BUTTON_HEIGHT - turn_right_button_text.get_height()) // 2
@@ -409,7 +409,7 @@ class StrawberryGridGame:
         # Forward Button
         forward_button = pygame.Rect(button_x, btn_start_y + 2 * (BUTTON_HEIGHT + BUTTON_MARGIN), BUTTON_WIDTH, BUTTON_HEIGHT)
         pygame.draw.rect(self.screen, GREEN, forward_button)
-        forward_button_text = self.font.render("Напред", True, WHITE)
+        forward_button_text = self.font.render("Forward", True, WHITE)
         self.screen.blit(forward_button_text, (
             forward_button.x + (BUTTON_WIDTH - forward_button_text.get_width()) // 2,
             forward_button.y + (BUTTON_HEIGHT - forward_button_text.get_height()) // 2
@@ -419,10 +419,10 @@ class StrawberryGridGame:
         run_button = pygame.Rect(button_x, btn_start_y + 3 * (BUTTON_HEIGHT + BUTTON_MARGIN), BUTTON_WIDTH, BUTTON_HEIGHT)
         if self.is_executing:
             pygame.draw.rect(self.screen, GRAY, run_button)
-            run_button_text = self.font.render("Поново", True, WHITE)
+            run_button_text = self.font.render("Restart", True, WHITE)
         else:
             pygame.draw.rect(self.screen, PLAYER_COLOR, run_button)
-            run_button_text = self.font.render("ПОКРЕНИ", True, WHITE)
+            run_button_text = self.font.render("RUN", True, WHITE)
         self.screen.blit(run_button_text, (
             run_button.x + (BUTTON_WIDTH - run_button_text.get_width()) // 2,
             run_button.y + (BUTTON_HEIGHT - run_button_text.get_height()) // 2
@@ -431,7 +431,7 @@ class StrawberryGridGame:
         # New Game Button
         new_game_button = pygame.Rect(button_x, btn_start_y + 4 * (BUTTON_HEIGHT + BUTTON_MARGIN), BUTTON_WIDTH, BUTTON_HEIGHT)
         pygame.draw.rect(self.screen, YELLOW, new_game_button)
-        ng_text = self.font.render("Нова игра", True, BLACK)
+        ng_text = self.font.render("New Game", True, BLACK)
         self.screen.blit(ng_text, (
             new_game_button.x + (BUTTON_WIDTH - ng_text.get_width()) // 2,
             new_game_button.y + (BUTTON_HEIGHT - ng_text.get_height()) // 2

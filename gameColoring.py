@@ -78,7 +78,7 @@ class ColoringGame:
     def _load_custom_image(self):
         """Load an image from a file chosen by the user."""
         filetypes = [("Image files", "*.png;*.jpg;*.jpeg;*.gif"), ("All files", "*.*")]
-        filepath = filedialog.askopenfilename(title="Изабери слику", filetypes=filetypes)
+        filepath = filedialog.askopenfilename(title="Choose image", filetypes=filetypes)
         if filepath:
             try:
                 self.original_image = Image.open(filepath).convert("RGBA")
@@ -88,38 +88,38 @@ class ColoringGame:
                 self.canvas.config(width=self.image.width, height=self.image.height)
                 self.canvas.itemconfig(self.image_on_canvas, image=self.photo)
             except Exception as e:
-                messagebox.showerror("Грешка", f"Не могу да отворим слику:\n{e}")
+                messagebox.showerror("Error", f"Cannot open image:\n{e}")
 
     def _save_image(self):
         """Save the current image to a file chosen by the user."""
         filetypes = [("PNG", "*.png"), ("JPEG", "*.jpg;*.jpeg"), ("All files", "*.*")]
-        filepath = filedialog.asksaveasfilename(title="Сачувај слику као", defaultextension=".png",
+        filepath = filedialog.asksaveasfilename(title="Save image as", defaultextension=".png",
                                                 filetypes=filetypes)
         if filepath:
             try:
                 self.image.save(filepath)
             except Exception as e:
-                messagebox.showerror("Грешка", f"Не могу да сачувам слику:\n{e}")
+                messagebox.showerror("Error", f"Cannot save image:\n{e}")
 
     def _create_color_palettes(self, parent):
         """Create two palettes: one for standard colors and one for light colors."""
         # Standard colors.
-        palette_frame = tk.LabelFrame(parent, text="Боје", padx=5, pady=5)
+        palette_frame = tk.LabelFrame(parent, text="Colors", padx=5, pady=5)
         palette_frame.pack(pady=5)
 
         colors = [
-            ("Црвена", (255, 0, 0, 255)),
-            ("Наранџаста", (255, 165, 0, 255)),
-            ("Жута", (255, 255, 0, 255)),
-            ("Зелена", (0, 128, 0, 255)),
-            ("Плава", (0, 0, 255, 255)),
-            ("Индиго", (75, 0, 130, 255)),
-            ("Љубичаста", (238, 130, 238, 255)),
-            ("Црна", (0, 0, 0, 255)),
-            ("Бела", (255, 255, 255, 255)),
-            ("Браон", (139, 69, 19, 255)),
-            ("Розе", (255, 192, 203, 255)),
-            ("Цијан", (0, 255, 255, 255))
+            ("Red", (255, 0, 0, 255)),
+            ("Orange", (255, 165, 0, 255)),
+            ("Yellow", (255, 255, 0, 255)),
+            ("Green", (0, 128, 0, 255)),
+            ("Blue", (0, 0, 255, 255)),
+            ("Indigo", (75, 0, 130, 255)),
+            ("Purple", (238, 130, 238, 255)),
+            ("Black", (0, 0, 0, 255)),
+            ("White", (255, 255, 255, 255)),
+            ("Brown", (139, 69, 19, 255)),
+            ("Pink", (255, 192, 203, 255)),
+            ("Cyan", (0, 255, 255, 255))
         ]
 
         for index, (name, color) in enumerate(colors):
@@ -137,16 +137,16 @@ class ColoringGame:
             )
             btn.grid(row=row, column=column, padx=5, pady=2, sticky="ew")
 
-        light_palette_frame = tk.LabelFrame(parent, text="Светле боје", padx=5, pady=5)
+        light_palette_frame = tk.LabelFrame(parent, text="Light colors", padx=5, pady=5)
         light_palette_frame.pack(pady=5)
 
         light_colors = [
-            ("Розе", (255, 182, 193, 255)),
-            ("Плава", (173, 216, 230, 255)),
-            ("Зелена", (144, 238, 144, 255)),
-            ("Лаванда", (230, 230, 250, 255)),
-            ("Беж", (245, 245, 220, 255)),
-            ("Жута", (255, 255, 224, 255))
+            ("Pink", (255, 182, 193, 255)),
+            ("Blue", (173, 216, 230, 255)),
+            ("Green", (144, 238, 144, 255)),
+            ("Lavender", (230, 230, 250, 255)),
+            ("Beige", (245, 245, 220, 255)),
+            ("Yellow", (255, 255, 224, 255))
         ]
 
         for index, (name, color) in enumerate(light_colors):
@@ -164,14 +164,14 @@ class ColoringGame:
     def _create_mode_toggle(self, parent):
         """Create a button to toggle between Fill and Brush modes."""
         self.mode_btn = tk.Button(parent,
-                                  text="Кантица",
+                                  text="Bucket",
                                   width=12,
                                   command=self._toggle_mode)
         self.mode_btn.pack(pady=5)
 
     def _create_sliders(self, parent):
         """Create sliders for fill tolerance and brush weight."""
-        tol_frame = tk.LabelFrame(parent, text="Толеранција попуне", padx=5, pady=5)
+        tol_frame = tk.LabelFrame(parent, text="Fill tolerance", padx=5, pady=5)
         tol_frame.pack(pady=5)
         self.tol_slider = tk.Scale(tol_frame, from_=0, to=100,
                                    orient=tk.HORIZONTAL,
@@ -179,7 +179,7 @@ class ColoringGame:
         self.tol_slider.set(self.tolerance)
         self.tol_slider.pack()
 
-        brush_frame = tk.LabelFrame(parent, text="Дебљина четкице", padx=5, pady=5)
+        brush_frame = tk.LabelFrame(parent, text="Brush thickness", padx=5, pady=5)
         brush_frame.pack(pady=5)
         self.brush_slider = tk.Scale(brush_frame, from_=1, to=50,
                                      orient=tk.HORIZONTAL,
@@ -191,10 +191,10 @@ class ColoringGame:
         """Create Load and Save buttons for image file operations."""
         file_frame = tk.Frame(parent)
         file_frame.pack(pady=10)
-        load_btn = tk.Button(file_frame, text="Учитај слику", width=15,
+        load_btn = tk.Button(file_frame, text="Load Image", width=15,
                              command=self._load_custom_image)
         load_btn.pack(pady=2)
-        save_btn = tk.Button(file_frame, text="Сачувај слику", width=15,
+        save_btn = tk.Button(file_frame, text="Save Image", width=15,
                              command=self._save_image)
         save_btn.pack(pady=2)
 
@@ -202,13 +202,13 @@ class ColoringGame:
         """Create navigation and exit buttons."""
         ctrl_frame = tk.Frame(parent)
         ctrl_frame.pack(pady=10)
-        next_btn = tk.Button(ctrl_frame, text="Следећа слика", width=15,
+        next_btn = tk.Button(ctrl_frame, text="Next Image", width=15,
                              command=self._next_image)
         next_btn.pack(pady=2)
-        reset_btn = tk.Button(ctrl_frame, text="Ресетуј слику", width=15,
+        reset_btn = tk.Button(ctrl_frame, text="Reset Image", width=15,
                               command=self._reset_image)
         reset_btn.pack(pady=2)
-        exit_btn = tk.Button(ctrl_frame, text="Затвори", width=15,
+        exit_btn = tk.Button(ctrl_frame, text="Close", width=15,
                              command=self.master.destroy)
         exit_btn.pack(pady=2)
 
@@ -220,10 +220,10 @@ class ColoringGame:
         """Toggle between fill mode and brush mode."""
         if self.mode == "fill":
             self.mode = "brush"
-            self.mode_btn.config(text="Четкица")
+            self.mode_btn.config(text="Brush")
         else:
             self.mode = "fill"
-            self.mode_btn.config(text="Кантица")
+            self.mode_btn.config(text="Bucket")
             if self.brush_cursor:
                 self.canvas.delete(self.brush_cursor)
                 self.brush_cursor = None
@@ -350,7 +350,7 @@ def main(parent=None):
     if parent is None:
         # Standalone mode: create a new root window.
         root = tk.Tk()
-        root.title("Игра бојења")
+        root.title("Coloring Game")
         root.resizable(True, True)
         try:
             current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -362,7 +362,7 @@ def main(parent=None):
     else:
         # Modal mode: create a new Toplevel.
         top = tk.Toplevel(parent)
-        top.title("Бојанка")
+        top.title("Coloring Book")
         top.resizable(True, True)
         try:
             current_dir = os.path.dirname(os.path.abspath(__file__))

@@ -26,7 +26,7 @@ BUTTON_HEIGHT = 70
 class ImagePairingGame(tk.Toplevel):
     def __init__(self, master=None, data_file="data.json"):
         super().__init__(master)
-        self.title("Спајалица")
+        self.title("Connector")
         self.geometry("1024x768")
 
         # This variable determines whether the right column shows English words (True) or Serbian words (False).
@@ -68,21 +68,21 @@ class ImagePairingGame(tk.Toplevel):
         # --- Left Column: Images ---
         image_column = ttk.Frame(columns_frame)
         image_column.pack(side=tk.LEFT, padx=20, fill="y")
-        ttk.Label(image_column, text="Слика", font=("Arial", 18, "bold")).pack(pady=10)
+        ttk.Label(image_column, text="Image", font=("Arial", 18, "bold")).pack(pady=10)
         self.image_column_frame = ttk.Frame(image_column)
         self.image_column_frame.pack(expand=True, fill="both")
 
         # --- Middle Column: Answers ---
         answer_column = ttk.Frame(columns_frame)
         answer_column.pack(side=tk.LEFT, padx=20, fill="y")
-        ttk.Label(answer_column, text="---------- Одговор ----------", font=("Arial", 18, "bold")).pack(pady=10)
+        ttk.Label(answer_column, text="---------- Answer ----------", font=("Arial", 18, "bold")).pack(pady=10)
         self.answer_column_frame = ttk.Frame(answer_column)
         self.answer_column_frame.pack(expand=True, fill="both")
 
         # --- Right Column: Words ---
         words_column = ttk.Frame(columns_frame)
         words_column.pack(side=tk.LEFT, padx=20, fill="y")
-        self.words_label = ttk.Label(words_column, text="---------- Речи (Српске) ----------", font=("Arial", 18, "bold"))
+        self.words_label = ttk.Label(words_column, text="---------- Words (Serbian) ----------", font=("Arial", 18, "bold"))
         self.words_label.pack(pady=10)
         self.words_column_frame = ttk.Frame(words_column)
         self.words_column_frame.pack(expand=True, fill="both")
@@ -90,13 +90,13 @@ class ImagePairingGame(tk.Toplevel):
         # Control frame with buttons and checkbox
         control_frame = ttk.Frame(self)
         control_frame.pack(pady=10)
-        ttk.Button(control_frame, text="Провери", command=self.check_solution).pack(side=tk.LEFT, padx=5)
-        ttk.Button(control_frame, text="Следеће", command=self.next_category).pack(side=tk.LEFT, padx=5)
-        ttk.Button(control_frame, text="Излаз", command=self.destroy).pack(side=tk.LEFT, padx=5)
+        ttk.Button(control_frame, text="Check", command=self.check_solution).pack(side=tk.LEFT, padx=5)
+        ttk.Button(control_frame, text="Next", command=self.next_category).pack(side=tk.LEFT, padx=5)
+        ttk.Button(control_frame, text="Exit", command=self.destroy).pack(side=tk.LEFT, padx=5)
 
         en_checkbox = ttk.Checkbutton(
             control_frame, 
-            text="Прикажи енглеске речи", 
+            text="Show English words",
             variable=self.include_english
         )
         en_checkbox.pack(side=tk.LEFT, padx=5)
@@ -175,10 +175,10 @@ class ImagePairingGame(tk.Toplevel):
             w.destroy()
 
         if self.include_english.get():
-            self.words_label.config(text="---------- Речи (Енглеске) ----------")
+            self.words_label.config(text="---------- Words (English) ----------")
             words_list = [item['english_label'].upper() for item in self.category_data]
         else:
-            self.words_label.config(text="---------- Речи (Српске) ----------")
+            self.words_label.config(text="---------- Words (Serbian) ----------")
             words_list = [item['serbian_label'].upper() for item in self.category_data]
 
         random.shuffle(words_list)
@@ -201,7 +201,7 @@ class ImagePairingGame(tk.Toplevel):
     def on_image_click(self, row):
         """Remember which image row was clicked."""
         self.selected_image_row = row
-        self.message_label.config(text=f"Слика {row+1} је изабрана. Сада кликните реч.")
+        self.message_label.config(text=f"Image {row+1} selected. Now click a word.")
 
     def on_word_click(self, word_index):
         """
@@ -209,7 +209,7 @@ class ImagePairingGame(tk.Toplevel):
         If the word is correct, place it in the answer column and disable the word button.
         """
         if self.selected_image_row is None:
-            self.message_label.config(text="Прво изаберите слику, па онда реч.")
+            self.message_label.config(text="Select an image first, then a word.")
             return
 
         chosen_word = self.words_data[word_index]
@@ -221,9 +221,9 @@ class ImagePairingGame(tk.Toplevel):
         if chosen_word == correct_label:
             self.answer_buttons[self.selected_image_row].config(text=chosen_word)
             self.words_buttons[word_index].config(state=tk.DISABLED)
-            self.message_label.config(text=f"Тачно! Реч '{chosen_word}' постављена у ред {self.selected_image_row+1}.")
+            self.message_label.config(text=f"Correct! Word '{chosen_word}' placed in row {self.selected_image_row+1}.")
         else:
-            self.message_label.config(text=f"Покушајте поново. Реч '{chosen_word}' не одговара овој слици.")
+            self.message_label.config(text=f"Try again. Word '{chosen_word}' does not match this image.")
 
         self.selected_image_row = None
 
@@ -240,9 +240,9 @@ class ImagePairingGame(tk.Toplevel):
                 correct_count += 1
 
         if correct_count == total:
-            self.message_label.config(text="Честитамо, сва повезивања су тачна!")
+            self.message_label.config(text="Congratulations, all matches are correct!")
         else:
-            self.message_label.config(text=f"Тачно {correct_count} од {total}. Неке слике нису правилно спојене.")
+            self.message_label.config(text=f"Correct {correct_count} out of {total}. Some images are not matched correctly.")
 
     def next_category(self):
         """Advance to the next category."""
@@ -252,7 +252,7 @@ class ImagePairingGame(tk.Toplevel):
     def reload_current_category(self, *args):
         """Rebuild the words column when the language selection changes."""
         self.build_words_column()
-        self.message_label.config(text="Приказ речи је промењен.")
+        self.message_label.config(text="Word display changed.")
 
 def main(parent=None):
     """
@@ -262,7 +262,7 @@ def main(parent=None):
     """
     if parent is None:
         root = tk.Tk()
-        root.title("Спајалица")
+        root.title("Connector")
         game = ImagePairingGame(master=root)
         root.mainloop()
     else:

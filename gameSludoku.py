@@ -82,7 +82,7 @@ def generate_puzzle(dimension):
 class EmojiSudoku:
     def __init__(self, root):
         self.root = root
-        self.root.title("Судоку")
+        self.root.title("Sudoku")
         # Make sure the window is resizable
         self.root.resizable(True, True)
         self.puzzle_count = 0  # Counts how many puzzles have been generated
@@ -90,7 +90,7 @@ class EmojiSudoku:
         # Frame to choose board size.
         self.dimension_frame = tk.Frame(self.root)
         self.dimension_frame.pack(pady=5)
-        tk.Label(self.dimension_frame, text="Изабери величину: ").pack(side=tk.LEFT)
+        tk.Label(self.dimension_frame, text="Choose size: ").pack(side=tk.LEFT)
 
         self.size_var = tk.IntVar(value=3)
         tk.Radiobutton(
@@ -117,13 +117,13 @@ class EmojiSudoku:
         self.control_frame.pack(pady=5)
         self.check_button = tk.Button(
             self.control_frame,
-            text="Провери",
+            text="Check",
             command=self.check_solution
         )
         self.check_button.pack(side=tk.LEFT, padx=5)
         self.next_button = tk.Button(
             self.control_frame,
-            text="Следећа игра",
+            text="Next Game",
             command=self.next_puzzle
         )
         self.next_button.pack(side=tk.LEFT, padx=5)
@@ -196,7 +196,7 @@ class EmojiSudoku:
                 row_buttons.append(btn)
             self.buttons.append(row_buttons)
 
-        self.status_label.config(text="Кликните на дугме да промените слику.")
+        self.status_label.config(text="Click the button to change the image.")
         self.next_button.config(state=tk.DISABLED)
 
     def create_cell_image(self, value):
@@ -263,17 +263,17 @@ class EmojiSudoku:
         # Check rows.
         for row in self.board_values:
             if sorted(row) != self.symbols:
-                self.status_label.config(text="Није исправно решено.")
+                self.status_label.config(text="Not solved correctly.")
                 return
         
         # Check columns.
         for c in range(self.dimension):
             col = [self.board_values[r][c] for r in range(self.dimension)]
             if sorted(col) != self.symbols:
-                self.status_label.config(text="Није исправно решено.")
+                self.status_label.config(text="Not solved correctly.")
                 return
         
-        self.status_label.config(text="Честитамо! Решили сте.")
+        self.status_label.config(text="Congratulations! You solved it.")
         self.next_button.config(state=tk.NORMAL)
 
     def next_puzzle(self):
