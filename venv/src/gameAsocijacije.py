@@ -1,7 +1,6 @@
 import tkinter as tk
 import os
 import json
-from PIL import Image, ImageTk
 
 # ---------------------------
 # Configuration and JSON Loading
@@ -12,73 +11,46 @@ try:
 except NameError:
     current_dir = os.getcwd()
 
-BACKGROUND_IMAGE_PATH = os.path.join(current_dir, "assets", "asoc", "asoc.png")
-PUZZLE_DATA_JSON = os.path.join(current_dir, "assets", "asoc",  "puzzle_data_sr.json")
-
-# === Behavior switches ===
-# Show Serbian text on each "button" (label) from the start
-SHOW_LANGUAGE_INITIAL = "srpski"   # "srpski" or "icons" (English)
-# If True, clicking reveals an image; if False, clicking toggles text (EN↔SR)
-USE_IMAGES_ON_REVEAL = False
-# Which image set to use when revealing images (if USE_IMAGES_ON_REVEAL=True)
-REVEAL_IMAGE_LANGUAGE = "srpski"    # "srpski" or "icons"
+PUZZLE_DATA_JSON = os.path.join(current_dir, "assets", "asoc", "puzzle_data_sr.json")
 
 with open(PUZZLE_DATA_JSON, "r", encoding="utf8") as f:
     puzzle_data = json.load(f)
 
 # ---------------------------
-# Utility Function for Normalization / Display
+# Helpers
 # ---------------------------
 
 def normalize_serbian(s: str) -> str:
     s = s.lower()
-    s = s.replace("dž", "dz")
-    s = s.replace("đ", "dj")
-    s = s.replace("č", "c")
-    s = s.replace("ć", "c")
-    s = s.replace("š", "s")
-    s = s.replace("ž", "z")
+    s = s.replace("dž", "dz").replace("đ", "dj").replace("č", "c").replace("ć", "c").replace("š", "s").replace("ž", "z")
     return s
 
 
 def filename_to_text(name: str) -> str:
-    base = os.path.splitext(name)[0]
-    return base.replace('_', ' ').upper()
+    base = os.path.splitext(str(name))[0]
+    return base.replace("_", " ").upper()
 
 # ---------------------------
-# Main Game Class
+# Main Game (TEXT ONLY, SR↔EN toggle on click)
+# Rule: when a column is solved/opened OR final solved, words must be EN and stay EN
 # ---------------------------
 
 class AsocijacijaIgra:
     def __init__(self, root):
         self.root = root
-        self.root.title("Associations - Learn Serbian")
+        self.root.title("Associations - Text Only (SR↔EN, EN when solved)")
 
-        # Load background image.
-        self.bg_image = Image.open(BACKGROUND_IMAGE_PATH)
-        self.bg_photo = ImageTk.PhotoImage(self.bg_image)
-
-        # Create a canvas with fixed width and height.
-        self.canvas = tk.Canvas(self.root, width=1024, height=750)
-        self.canvas.pack()
-        self.canvas.create_image(0, 0, image=self.bg_photo, anchor="nw")
+        self.canvas = tk.Canvas(self.root, width=1024, height=750, highlightthickness=0)
+        self.canvas.pack(fill="both", expand=True)
 
         self.score = 0
         self.puzzle_index = 0
         self.final_solved = False
 
-        # Create main_frame that is embedded in the canvas.
         self.main_frame = tk.Frame(self.canvas, bg="lightblue")
-        self.frame_window = self.canvas.create_window(0, 50, window=self.main_frame, anchor="nw", width=1024)
+        self.frame_window = self.canvas.create_window(0, 0, window=self.main_frame, anchor="nw", width=1024)
 
-        # Widgets in the main_frame.
-        self.score_label = tk.Label(
-            self.main_frame,
-            text=f"Score: {self.score}",
-            font=("Impact", 14),
-            fg="blue",
-            bg="lightblue",
-        )
+        self.score_label = tk.Label(self.main_frame, text=f"Score: {self.score}", font=("Impact", 14), fg="blue", bg="lightblue")
         self.score_label.pack(pady=5)
 
         self.info_label = tk.Label(self.main_frame, text="", font=("Arial", 14), fg="black", bg="lightblue")
@@ -92,18 +64,25 @@ class AsocijacijaIgra:
         self.next_game_button.config(state="disabled")
 
         # holders
-        self.icon_images_en = {}
-        self.icon_images_sr = {}
-        self.text_map = {}         # {col: {"icons": [..], "srpski": [..]}}
+        self.text_map = {}              # {col: {"srpski": [..], "icons": [..]}}
         self.current_language_map = {}  # {col: ["srpski"|"icons", ...]}
+        self.widget_map = {}            # {col: [Button, Button, Button, Button]}
 
         self._load_puzzle(self.puzzle_index)
-
-        # Bind the resize event to ensure the canvas window stays 1024 pixels wide.
         self.root.bind("<Configure>", self.resize_frame)
 
     def resize_frame(self, event):
         self.canvas.itemconfig(self.frame_window, width=self.canvas.winfo_width())
+
+    def _extract_texts(self, col_data):
+        en_items = col_data.get("icons", [])
+        sr_items = col_data.get("srpski", []) or en_items
+        def to_words(items):
+            out = []
+            for x in items:
+                out.append(filename_to_text(x))
+            return out
+        return to_words(sr_items), to_words(en_items)
 
     def _load_puzzle(self, index):
         self.current_puzzle = puzzle_data[index]
@@ -111,94 +90,54 @@ class AsocijacijaIgra:
         self.final_solution = self.current_puzzle["final_solution"]
         self.final_solved = False
 
-        self.revealed = {col: [False] * 4 for col in self.columns}
+        self.revealed = {col: [False]*4 for col in self.columns}
         self.solved_columns = {col: False for col in self.columns}
-        self.label_map = {col: [] for col in self.columns}
+        self.widget_map = {col: [] for col in self.columns}
         self.entry_map = {}
         self.button_map = {}
-        self.icon_images_en = {}
-        self.icon_images_sr = {}
         self.text_map = {}
-        self.current_language_map = {col: [SHOW_LANGUAGE_INITIAL]*4 for col in self.columns}
+        self.current_language_map = {col: ["srpski"]*4 for col in self.columns}
 
         for w in self.puzzle_frame.winfo_children():
             w.destroy()
         self.info_label.config(text="")
         self.next_game_button.config(state="disabled")
 
-        # Pillow resample compatibility
-        if hasattr(Image, 'Resampling'):
-            resample_mode = Image.Resampling.LANCZOS
-        else:
-            resample_mode = Image.LANCZOS
-
-        # Preload images and texts for both languages
+        # Load words from JSON (strip extensions)
         for col, col_data in self.columns.items():
-            # ---- English set ("icons") ----
-            self.icon_images_en[col] = []
-            en_files = col_data.get("icons", [])
-            for fname in en_files:
-                icon_path = os.path.join(current_dir, "assets", "asoc", "icons", fname)
-                try:
-                    pil_image = Image.open(icon_path)
-                    pil_image = pil_image.resize((200, 80), resample_mode)
-                    photo_image = ImageTk.PhotoImage(pil_image)
-                except Exception as e:
-                    print(f"Error loading image {icon_path}: {e}")
-                    photo_image = None
-                self.icon_images_en[col].append(photo_image)
+            sr_texts, en_texts = self._extract_texts(col_data)
+            # Ensure length 4 with safe fallbacks
+            def ensure4(lst):
+                return (lst + [""]*4)[:4]
+            self.text_map[col] = {"srpski": ensure4(sr_texts), "icons": ensure4(en_texts)}
 
-            # ---- Serbian set ("srpski") ----
-            self.icon_images_sr[col] = []
-            sr_files = col_data.get("srpski", [])
-            # if not provided, mirror EN list
-            if not sr_files:
-                sr_files = en_files
-            for fname in sr_files:
-                icon_path = os.path.join(current_dir, "assets", "asoc", "icons", fname)
-                try:
-                    pil_image = Image.open(icon_path)
-                    pil_image = pil_image.resize((200, 80), resample_mode)
-                    photo_image = ImageTk.PhotoImage(pil_image)
-                except Exception as e:
-                    print(f"Error loading image {icon_path}: {e}")
-                    photo_image = None
-                self.icon_images_sr[col].append(photo_image)
-
-            # ---- Texts ----
-            en_texts = [filename_to_text(x) for x in en_files]
-            sr_texts = [filename_to_text(x) for x in sr_files]
-            self.text_map[col] = {"icons": en_texts, "srpski": sr_texts}
-
-        # Build UI
+        # Build UI per column
         for i, col in enumerate(self.columns.keys()):
             frame = tk.Frame(self.puzzle_frame, padx=10, pady=10, bg="lightblue")
             frame.grid(row=0, column=i, sticky="n")
 
             tk.Label(frame, text=f"{col}", font=("Impact", 14), fg="blue", bg="lightblue").pack()
 
-            # Create a label for each field using configured initial language text.
-            init_lang = SHOW_LANGUAGE_INITIAL
             for j in range(4):
-                container = tk.Frame(frame, width=200, height=80, bg="lightyellow")
-                container.pack(pady=2)
-                container.pack_propagate(False)
-
-                display_name = self.text_map[col][init_lang][j]
-                lbl = tk.Label(container, text=display_name, bg="lightyellow", wraplength=190, justify="center")
-                lbl.pack(expand=True, fill="both")
-                lbl.bind("<Button-1>", lambda e, c=col, idx=j: self._reveal_one_field(c, idx))
-                self.label_map[col].append(lbl)
+                btn = tk.Button(
+                    frame,
+                    text=self.text_map[col]["srpski"][j],
+                    width=18,
+                    height=3,
+                    wraplength=180,
+                    justify="center",
+                    bg="lightyellow",
+                    relief=tk.RAISED,
+                    command=lambda c=col, idx=j: self._toggle_field(c, idx)
+                )
+                btn.pack(pady=3, fill="x")
+                self.widget_map[col].append(btn)
 
             entry = tk.Entry(frame)
             entry.pack(pady=5)
             self.entry_map[col] = entry
 
-            check_btn = tk.Button(
-                frame,
-                text="✅",
-                command=lambda c=col, e=entry: self._check_column_solution(c, e)
-            )
+            check_btn = tk.Button(frame, text="✅", command=lambda c=col, e=entry: self._check_column_solution(c, e))
             check_btn.pack(pady=5)
             self.button_map[col] = check_btn
 
@@ -208,63 +147,32 @@ class AsocijacijaIgra:
         tk.Label(final_frame, text="Final answer:", font=("Arial", 12), bg="lightblue").pack()
         self.final_entry = tk.Entry(final_frame)
         self.final_entry.pack(pady=2)
-        final_btn = tk.Button(final_frame, text="Submit", command=self._check_final_solution)
-        final_btn.pack(pady=2)
+        tk.Button(final_frame, text="Submit", command=self._check_final_solution).pack(pady=2)
 
-    def _normalize_input(self, text: str) -> str:
-        return normalize_serbian(text)
-
-    # === Reveal / Toggle logic ===
-    def _reveal_one_field(self, col, idx):
+    # === Click toggles SR ↔ EN for that field (until column/final is solved) ===
+    def _toggle_field(self, col, idx):
         if self.solved_columns[col] or self.final_solved:
-            return
+            return  # once solved, keep EN (set elsewhere)
+        cur = self.current_language_map[col][idx]
+        nxt = "icons" if cur == "srpski" else "srpski"
+        self.current_language_map[col][idx] = nxt
+        btn = self.widget_map[col][idx]
+        btn.config(text=self.text_map[col][nxt][idx])
+        # mark as opened (green) for scoring purposes
         if not self.revealed[col][idx]:
-            lbl = self.label_map[col][idx]
-
-            if USE_IMAGES_ON_REVEAL:
-                # choose which image set
-                img_list = self.icon_images_sr[col] if REVEAL_IMAGE_LANGUAGE == "srpski" else self.icon_images_en[col]
-                photo_image = img_list[idx] if idx < len(img_list) else None
-                if photo_image:
-                    lbl.config(image=photo_image, text="")
-                    lbl.image = photo_image  # keep reference
-                else:
-                    # fallback to text if image missing
-                    text_to_show = self.text_map[col][REVEAL_IMAGE_LANGUAGE][idx]
-                    lbl.config(text=text_to_show)
-            else:
-                # Toggle text between EN <-> SR on click
-                current_lang = self.current_language_map[col][idx]
-                new_lang = "srpski" if current_lang == "icons" else "icons"
-                self.current_language_map[col][idx] = new_lang
-                lbl.config(text=self.text_map[col][new_lang][idx], image="")
-                lbl.image = None
-
-            lbl.config(bg="lightgreen")
+            btn.config(bg="lightgreen")
             self.revealed[col][idx] = True
 
+    # === Force EN when revealing a solved column ===
     def _reveal_all_in_column(self, col):
-        for i, lbl in enumerate(self.label_map[col]):
-            if USE_IMAGES_ON_REVEAL:
-                img_list = self.icon_images_sr[col] if REVEAL_IMAGE_LANGUAGE == "srpski" else self.icon_images_en[col]
-                photo_image = img_list[i] if i < len(img_list) else None
-                if photo_image:
-                    lbl.config(image=photo_image, text="")
-                    lbl.image = photo_image
-                else:
-                    lbl.config(text=self.text_map[col]["srpski"][i])
-            else:
-                # Show Serbian text when revealing all
-                self.current_language_map[col][i] = "srpski"
-                lbl.config(text=self.text_map[col]["srpski"][i], image="")
-                lbl.image = None
-
-            lbl.config(bg="lightgreen")
+        for i, btn in enumerate(self.widget_map[col]):
+            self.current_language_map[col][i] = "icons"  # lock to EN
+            btn.config(text=self.text_map[col]["icons"][i], bg="lightgreen")
             self.revealed[col][i] = True
 
     def _reveal_all_in_puzzle(self):
         for col in self.columns:
-            self._reveal_all_in_column(col)
+            self._reveal_all_in_column(col)  # this locks every column to EN
 
     def _count_unopened_fields(self, col):
         return sum(not opened for opened in self.revealed[col])
@@ -272,23 +180,19 @@ class AsocijacijaIgra:
     # === Checking logic ===
     def _check_column_solution(self, col, entry):
         user_answer_raw = entry.get().strip()
-        user_answer = self._normalize_input(user_answer_raw)
+        user_answer = normalize_serbian(user_answer_raw)
         valid_answers = self.columns[col]["solution"]
-        valid_answers_normalized = [self._normalize_input(ans) for ans in valid_answers]
+        valid_norm = [normalize_serbian(ans) for ans in valid_answers]
 
-        if user_answer in valid_answers_normalized:
+        if user_answer in valid_norm:
             if not self.solved_columns[col]:
                 unopened = self._count_unopened_fields(col)
-                points_for_column = 2 + unopened
-                self.score += points_for_column
+                points = 2 + unopened
+                self.score += points
                 self._update_score()
-
                 self.solved_columns[col] = True
-                self.info_label.config(
-                    text=f"Column {col} solved! +{points_for_column} points.",
-                    fg="green"
-                )
-                self._reveal_all_in_column(col)
+                self.info_label.config(text=f"Column {col} solved! +{points} points.", fg="green")
+                self._reveal_all_in_column(col)  # switch & lock to EN for this column
             else:
                 self.info_label.config(text="Column already solved.", fg="orange")
         else:
@@ -296,38 +200,26 @@ class AsocijacijaIgra:
 
     def _check_final_solution(self):
         if not self.final_solved:
-            user_answer_raw = self.final_entry.get().strip()
-            user_answer = self._normalize_input(user_answer_raw)
-            valid_final_answers = self.final_solution
-            valid_final_answers_normalized = [self._normalize_input(ans) for ans in valid_final_answers]
-
-            if user_answer in valid_final_answers_normalized:
+            user_answer = normalize_serbian(self.final_entry.get().strip())
+            valid_norm = [normalize_serbian(ans) for ans in self.final_solution]
+            if user_answer in valid_norm:
                 self.final_solved = True
-                base_final_points = 5
-                extra_col_points = 0
+                base_final = 5
+                extra = 0
                 for col in self.columns:
                     if not self.solved_columns[col]:
                         unopened = self._count_unopened_fields(col)
-                        col_points = 2 + unopened
-                        extra_col_points += col_points
-
-                total_final_points = base_final_points + extra_col_points
-                self.score += total_final_points
+                        extra += 2 + unopened
+                total = base_final + extra
+                self.score += total
                 self._update_score()
-
-                self.info_label.config(
-                    text=f"Bravo! Final answer is: {valid_final_answers[0]} (+{total_final_points} points)",
-                    fg="green"
-                )
-
-                self._reveal_all_in_puzzle()
-
+                self.info_label.config(text=f"Bravo! Final answer is: {self.final_solution[0]} (+{total} points)", fg="green")
+                self._reveal_all_in_puzzle()  # switch & lock all to EN
                 for col in self.columns:
                     self.entry_map[col].delete(0, tk.END)
                     self.entry_map[col].insert(0, self.columns[col]["solution"][0])
                     self.entry_map[col].config(state="disabled")
                     self.button_map[col].config(state="disabled")
-
                 self.next_game_button.config(state="normal")
             else:
                 self.info_label.config(text="Incorrect final answer.", fg="red")
@@ -345,21 +237,23 @@ class AsocijacijaIgra:
             self.info_label.config(text="No more puzzles!", fg="blue")
             self.next_game_button.config(state="disabled")
 
+
 def main(parent=None):
     if parent is None:
         root = tk.Tk()
-        root.title("Associations")
+        root.title("Associations (EN when solved)")
         root.resizable(True, True)
-        app = AsocijacijaIgra(root)
+        AsocijacijaIgra(root)
         root.mainloop()
     else:
         top = tk.Toplevel(parent)
-        top.title("Associations")
+        top.title("Associations (EN when solved)")
         top.resizable(True, True)
         top.grab_set()
         top.focus_set()
         AsocijacijaIgra(top)
         top.wait_window()
+
 
 if __name__ == "__main__":
     main()
