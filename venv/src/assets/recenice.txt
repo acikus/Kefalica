@@ -1,0 +1,22 @@
+MALMIS.png,One day, a little mouse was walking through the forest.
+MACCIZ.png,Puss in Boots was clever and smart.
+MSIREN.png,The little mermaid dreamed of living on land.
+RUZPAC.png,The ugly duckling grew into a beautiful swan.
+VINIPU.png,In the forest lived a bear named Winnie the Pooh.
+DEDMRA.png,Santa Claus brings gifts to children all over the world.
+MALPRI.png,The little princess loved playing in the mud.
+TRIPRA.png,The three little pigs built three different houses.
+MPRINC.png,The Little Prince loved watching sunsets.
+MALBUB.png,The little ladybug overheard the plans of two suspicious characters.
+MALISA.png,Alice followed the white rabbit and fell into a rabbit hole.
+GROZON.png,The Gruffalo is a scary monster with tusks and claws.
+CRVENK.png,Little Red Riding Hood wore a red hood and went to visit her grandmother.
+PETPAN.png,Peter Pan could fly and never grew up.
+SNEPAT.png,Snow White lived with seven dwarfs in a small cottage.
+ZLIVUK.png,The big bad wolf blew and the straw house collapsed.
+IVIMAR.png,Hansel and Gretel found a candy house in the middle of the forest.
+ZLATOK.png,Goldilocks had long golden hair and loved wandering through the forest.
+PINOKI.png,Pinocchio was a wooden puppet who wanted to become a real boy.
+MALLOK.png,The little blue locomotive believed it could climb over the big hill.
+
+
