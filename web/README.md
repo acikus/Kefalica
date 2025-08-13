@@ -1,9 +1,9 @@
-# Browser Arithmetic Game
+# Browser Games
 
-This directory contains a simple browser-based version of the **Basic Operations** game from the original Tkinter project.
+This directory contains browser-based versions of games from the original Tkinter project.
 
-## Running
+## Basic Operations
+Open `basic_ops.html` in a modern web browser. The page presents addition and subtraction problems with answer buttons, tracking score and attempts. No build step is required; all logic is implemented in `basic_ops.js`.
 
-Open `basic_ops.html` in a modern web browser. The page presents addition and subtraction problems with answer buttons, tracking score and attempts.
-
-No build step is required; all logic is implemented in `basic_ops.js`.
+## Counter
+Open `counter.html` to play a simple counting game. Click circles to toggle their color and choose plus or minus to combine the two rows. The game updates the result automatically. No build step is required; all logic is implemented in `counter.js`.
