@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Math Game - Browser Version</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; }
+    .answers button { width: 50px; height: 50px; margin: 5px; font-size: 18px; }
+    #feedback { margin-top: 10px; height: 24px; }
+  </style>
+</head>
+<body>
+  <h1>Math Game</h1>
+  <div id="problem"></div>
+  <div class="answers" id="answers"></div>
+  <div id="feedback"></div>
+  <div id="score">Score: 0</div>
+  <div id="attempts">Attempts: 0</div>
+  <button id="nextBtn" disabled>Next Task</button>
+  <button id="toggleOp">Choose operation: +</button>
+  <button id="restartBtn">Restart Game</button>
+  <button id="endBtn">End Game</button>
+  <script src="basic_ops.js"></script>
+</body>
+</html>
