@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Counter Game</title>
+<style>
+  body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; }
+  .row { margin: 10px 0; }
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: lightgreen;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  .circle.red { background: red; }
+  .count, #operation, #equals { font-size: 36px; margin: 10px 0; }
+  #operation { cursor: pointer; color: blue; }
+</style>
+</head>
+<body>
+<h1>Counter</h1>
+<p>Click a circle to color it. You can click plus (+) or minus (-).</p>
+<div id="row1" class="row"></div>
+<div id="count1" class="count">0</div>
+<div id="operation">+</div>
+<div id="count2" class="count">0</div>
+<div id="row2" class="row"></div>
+<div id="equals">= <span id="result">0</span></div>
+<script src="counter.js"></script>
+</body>
+</html>
