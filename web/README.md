@@ -10,3 +10,6 @@ Open `counter.html` to play a simple counting game. Click circles to toggle thei
 
 ## Memory
 Open `memory.html` to play a memory matching game. Click cards to reveal emojis and find all matching pairs. All logic is implemented in `memory.js`.
+
+## Snake
+Open `snake.html` to play the classic Snake game. Use the arrow keys to steer the snake, eat food, and grow. The score increases with each piece of food. All logic is in `snake.js` with no build step required.
