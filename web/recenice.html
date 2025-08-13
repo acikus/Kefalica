@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Sentence Game</title>
-<style>
-  body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; }
-  #sentence { margin: 20px; font-size: 24px; }
-</style>
+  <meta charset="UTF-8" />
+  <title>Sentence Game</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+    #image-container img { max-width: 300px; height: auto; }
+    #available, #selected { margin: 10px; min-height: 50px; }
+    .word { margin: 5px; padding: 8px 12px; border: 1px solid #333; cursor: pointer; display: inline-block; }
+    #navigation { margin-top: 20px; }
+  </style>
 </head>
 <body>
-<h1>Sentence Game</h1>
-<p id="sentence"></p>
-<button id="next">Next</button>
-<script src="recenice.js"></script>
+  <h1>Sentence Game</h1>
+  <div id="image-container"><img id="image" alt="" /></div>
+  <div id="available"></div>
+  <div id="selected"></div>
+  <div id="navigation">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn" disabled>Next</button>
+    <span id="progress"></span>
+    <button id="finishBtn">Finish Game</button>
+  </div>
+  <script src="recenice.js"></script>
 </body>
 </html>
