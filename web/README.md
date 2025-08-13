@@ -7,3 +7,6 @@ Open `basic_ops.html` in a modern web browser. The page presents addition and su
 
 ## Counter
 Open `counter.html` to play a simple counting game. Click circles to toggle their color and choose plus or minus to combine the two rows. The game updates the result automatically. No build step is required; all logic is implemented in `counter.js`.
+
+## Memory
+Open `memory.html` to play a memory matching game. Click cards to reveal emojis and find all matching pairs. All logic is implemented in `memory.js`.
