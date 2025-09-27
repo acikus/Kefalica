@@ -1,0 +1,59 @@
+Basic Operations (basic_ops.html / basic_ops.js)
+------------------------------------------------
+Overview: A math fluency drill that alternates between single-digit addition and subtraction problems. The interface renders a prompt, nine answer buttons, progress feedback, and controls for cycling problems, toggling the active operation, restarting, or ending the session. 【F:web/basic_ops.html†L13-L23】
+
+Core loop:
+- Whenever a new problem is generated, the game clears feedback, disables the "Next" button, and chooses operands that fit the current operation. Addition tasks pick numbers from 1–5 while deliberately skipping sums of 10; subtraction tasks pick a minuend from 2–9 and a subtrahend that is always smaller to avoid negatives. 【F:web/basic_ops.js†L11-L25】
+- Answer options (1–9) are created at load time; clicking one checks it against the stored solution. Attempts increment on every click, successful answers increment the score, and only correct responses re-enable the "Next" button while showing positive feedback. 【F:web/basic_ops.js†L28-L49】
+- Operation toggling regenerates a fresh problem with the new operator. Restart resets both score and attempt counters before generating a fresh prompt, while ending the game replaces the page content with a closing message. 【F:web/basic_ops.js†L50-L63】
+
+Player guidance: Live score and attempt counters provide immediate performance tracking. Feedback text distinguishes correct versus incorrect answers, helping another AI decide when to surface hints or reinforcement. 【F:web/basic_ops.js†L28-L38】【F:web/basic_ops.html†L17-L19】
+
+
+Counter (counter.html / counter.js)
+------------------------------------
+Overview: A manipulatives-inspired arithmetic toy composed of two rows of five circles. Players toggle circles between light green and red to represent quantities, then switch between addition and subtraction to view the computed result in real time. 【F:web/counter.html†L24-L31】【F:web/counter.js†L1-L11】
+
+Core loop:
+- Each row starts with five neutral circles that acquire the `.red` class when clicked; toggling adjusts per-row counts tracked in `redCount1` and `redCount2`. 【F:web/counter.js†L13-L22】【F:web/counter.html†L9-L19】
+- The operation glyph doubles as a button—switching between `+` and `-` instantly recomputes and displays the combined total or difference. 【F:web/counter.js†L39-L42】【F:web/counter.html†L28-L31】
+
+Player guidance: Large numeric readouts for both rows, the current operation, and the live result let an AI tutor highlight counting strategies or fact families based on the student’s manipulations. 【F:web/counter.html†L27-L31】
+
+
+Memory (memory.html / memory.js)
+---------------------------------
+Overview: A 4×4 emoji card matching challenge with eight pairs themed around vehicles. Cards begin face-down, flipping to reveal their emoji and locking in matches. Clearing all pairs surfaces a win message, and a restart button re-seeds the board. 【F:web/memory.html†L6-L27】【F:web/memory.js†L14-L50】
+
+Core loop:
+- `createBoard` duplicates the emoji set, shuffles it, wipes the existing grid, and injects 16 clickable card elements tagged with their hidden emoji. 【F:web/memory.js†L14-L27】
+- Clicking a card reveals its emoji unless the board is locked or the card was already matched. The first selection stores reference state; the second triggers match validation while temporarily preventing additional interaction. 【F:web/memory.js†L29-L40】
+- Matching pairs gain the `matched` class, increment the `matches` counter, and when all eight pairs are found the game writes "You win!" to the message area. Non-matching pairs flip back after a one-second timeout. 【F:web/memory.js†L43-L60】
+- Restarting clears the match count, removes any victory text, and rebuilds the shuffled board. 【F:web/memory.js†L68-L74】
+
+Player guidance: The grid layout, question-mark placeholders, and status message region give another AI explicit hooks for narrating strategies (e.g., remembering positions) or celebrating completion. 【F:web/memory.html†L8-L27】
+
+
+Sentence Builder (recenice.html / recenice.js)
+----------------------------------------------
+Overview: A sequencing activity themed around classic storybook scenes. Each level displays an illustration and a sentence whose words are scrambled into colorful buttons. Players move words from the available pool into the ordered sentence area; once the reconstruction is correct, progression to the next scene unlocks. 【F:web/recenice.js†L1-L66】【F:web/recenice.html†L15-L25】
+
+Core loop:
+- Data comprises twenty (image, sentence) pairs drawn from familiar tales. Loading a sentence sets the image, splits the uppercase text into tokens, shuffles them, and renders each as a movable button with a random pastel background. 【F:web/recenice.js†L1-L64】
+- Clicking a word toggles it between the "available" and "selected" containers. The system continuously checks whether the selected sequence matches the original; only then is the "Next" button enabled, enforcing correct ordering before advancing. 【F:web/recenice.js†L68-L86】
+- Navigation controls allow stepping backward or forward through the catalog while maintaining validation per screen. A finish button currently emits a simple completion alert, signaling the end of the activity loop. 【F:web/recenice.js†L40-L108】
+
+Player guidance: The progress indicator, image pairing, and explicit separation between unsorted and ordered words can help an assisting AI offer context-sensitive hints (e.g., referencing the picture or highlighting misplaced terms). 【F:web/recenice.js†L47-L105】【F:web/recenice.html†L16-L24】
+
+
+Snake (snake.html / snake.js)
+------------------------------
+Overview: A classic grid-based snake implementation running on a 400×400 canvas segmented into 20-pixel cells. Players steer with the arrow keys to eat randomly placed food, growing the snake and raising the score until a collision triggers game over. Restart and end buttons manage session control. 【F:web/snake.html†L14-L19】【F:web/snake.js†L1-L75】
+
+Core loop:
+- `init` seeds the snake at position (10,10), sets the initial direction, score, and food placement, and starts a 120 ms interval loop. Restarting re-invokes this setup. 【F:web/snake.js†L7-L16】【F:web/snake.js†L68-L69】
+- Each `step` advances the head, checks for wall or self collisions, and either grows the snake upon eating food or removes the tail segment otherwise. Collisions halt the loop and append " - Game Over" to the score readout for quick status detection. 【F:web/snake.js†L30-L48】
+- Food placement avoids overlapping the snake by re-rolling coordinates as needed. Rendering clears the canvas, paints the snake segments in green, and draws food in red. 【F:web/snake.js†L18-L58】
+- Keyboard handlers forbid direct reversal of direction, preventing instant self-collisions, while the End button stops the timer and replaces the document body with a closing message. 【F:web/snake.js†L60-L73】
+
+Player guidance: The persistent score element and color-coded rendering simplify progress monitoring for an AI observer, while the explicit game-over text and button hooks offer clear triggers for post-game coaching. 【F:web/snake.html†L15-L19】【F:web/snake.js†L37-L73】
