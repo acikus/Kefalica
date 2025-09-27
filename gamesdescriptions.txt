@@ -1,0 +1,169 @@
+Guess Who I Am (gamePogodi.py)
+--------------------------------
+Overview: A modal-friendly Tkinter game that lazily loads animal images, masks a translated class name, and challenges players to recover the missing letters before running out of lives. The initializer wires the background canvas, status panel, and alphabet keyboard while indexing dataset paths and translated labels only once for reuse.【F:venv/src/gamePogodi.py†L24-L186】
+
+Core loop:
+- `load_next_image` removes an unused index, loads the image on demand, seeds the masked word based on the current level, and disables the "Next" button until the puzzle is solved.【F:venv/src/gamePogodi.py†L230-L270】
+- `process_letter` reveals every matching position for the chosen letter, decrements lives on a miss, and when all underscores are filled increments score, unlocks the level-up button, and increases the hidden-letter count for future rounds.【F:venv/src/gamePogodi.py†L272-L307】
+
+AI integration cues: Score/life text and the masked word label expose the player's state, while button states on the virtual keyboard show which letters remain and whether the round is over—helpful triggers for prompting hints or congratulations.【F:venv/src/gamePogodi.py†L134-L191】【F:venv/src/gamePogodi.py†L300-L307】
+
+Memory (gameMemory.py)
+-----------------------
+Overview: A 6×6 letter-matching board that chooses pastel colors per letter pair, tracks attempts and time, and can run stand-alone or in a modal window without duplicating state. Initialization loads a themed background, builds a Tkinter canvas grid, and starts timers lazily upon the first click.【F:venv/src/gameMemory.py†L37-L160】
+
+Core loop:
+- `on_button_click` reveals a tile, prevents more than two flips, updates attempt counts, and dispatches to match or reset handlers after a short delay.【F:venv/src/gameMemory.py†L162-L188】
+- `remove_matched` destroys matched buttons, increments the found-pairs counter, and triggers the win message/timer stop, while `hide_letters` restores unmatched tiles for another try.【F:venv/src/gameMemory.py†L189-L206】
+
+AI integration cues: Attempts, timer, and info labels offer live feedback for coaching strategies or celebrating efficiency, and the "Next Game" button funnels session resets without destroying the parent window.【F:venv/src/gameMemory.py†L57-L75】【F:venv/src/gameMemory.py†L200-L218】
+
+Mathador (gameMathador.py)
+--------------------------
+Overview: An arcade shooter built with Pygame that blends arithmetic and reflexes by spawning triple-valued UFOs and giving the player additive or subtractive laser modes. Player, bullet, enemy, and explosion sprites encapsulate animation, hit logic, and scoring, all launched through a Tkinter-friendly thread wrapper.【F:venv/src/gameMathador.py†L68-L189】
+
+Core loop:
+- `spawn_wave` and `run_game_loop` orchestrate wave-based enemy creation, handle keyboard input for weapon selection, and advance the game state between running and game-over screens.【F:venv/src/gameMathador.py†L285-L359】
+- Enemy `hit` compares the fired amount with shield values, awards points when the cockpit equation balances, and injects explosion animations/sounds on destruction.【F:venv/src/gameMathador.py†L152-L181】
+
+AI integration cues: Score and lives overlays make performance monitoring trivial, and the discrete weapon keys (`S`, `D`, `A`, `F`) let an assistant nudge the player toward the correct arithmetic operation when UFO sums drift away from targets.【F:venv/src/gameMathador.py†L271-L319】
+
+Associations (gameAsocijacije.py)
+---------------------------------
+Overview: A text-only rendition of the classic “Association” puzzle where columns of clues toggle between Serbian and English until solved. The UI constructs four column stacks with entry fields, score tracking, and a final solution row, all sourced from JSON puzzles.【F:venv/src/gameAsocijacije.py†L12-L177】
+
+Core loop:
+- `_toggle_field` flips individual clues between languages and marks them opened for scoring, while solved columns lock to English and reward points based on unrevealed tiles.【F:venv/src/gameAsocijacije.py†L120-L199】
+- `_check_final_solution` validates the concluding answer, grants bonus points for unopened clues, freezes inputs, and re-enables the “Next Puzzle” button for rotation.【F:venv/src/gameAsocijacije.py†L201-L236】
+
+AI integration cues: Score labels, info messaging, and per-column entry states expose exactly which hints were revealed, allowing an assistant to balance encouragement with reminders about remaining clues.【F:venv/src/gameAsocijacije.py†L34-L236】
+
+Coloring (gameColoring.py)
+--------------------------
+Overview: A Tkinter painting studio that supports flood fill and brush modes on a gallery of PNG templates, complete with palette buttons, tolerance sliders, and file load/save controls. The constructor preloads available coloring sheets, builds side-by-side control and canvas panes, and binds mouse gestures for painting.【F:venv/src/gameColoring.py†L12-L200】
+
+Core loop:
+- `_toggle_mode`, `_update_tolerance`, and `_update_brush_weight` let players shift between precise flood fill and freeform brush strokes, adjusting behavior through sliders and button text.【F:venv/src/gameColoring.py†L219-L238】
+- `_on_canvas_click`/`_on_canvas_drag` delegate to `_fill_at` or `_brush_at`, with flood fill implemented via a tolerance-aware stack that recolors contiguous regions before refreshing the Tkinter canvas.【F:venv/src/gameColoring.py†L239-L327】
+
+AI integration cues: The live tolerance/brush settings and palette selections expose a player’s strategy, enabling hints about technique (e.g., suggesting brush mode for thin regions) or reminding the student to save work via the control buttons.【F:venv/src/gameColoring.py†L48-L213】
+
+Programmer (gameProgramer.py)
+------------------------------
+Overview: A Pygame-based sequencing puzzle where learners assemble move commands to guide a strawberry-collecting robot across randomly generated grids. The `StrawberryGridGame` class loads themed tiles, builds three UI columns (world, command queue, command palette), and scales challenges across multiple levels while guaranteeing solvable layouts.【F:venv/src/gameProgramer.py†L31-L205】
+
+Core loop:
+- Event handling records button presses into the command list, animates execution with adjustable timing, and checks collisions, strawberry pickups, and goal completion while allowing undo and restart actions.【F:venv/src/gameProgramer.py†L343-L536】
+- Level generation randomizes rocks/strawberries under BFS validation so every scenario has a solution but still rewards optimized sequences.【F:venv/src/gameProgramer.py†L165-L213】
+
+AI integration cues: The visible command queue, move counter, and per-level strawberries remaining give an assistant hooks to suggest new instructions or debug why a plan failed before the robot collides or stalls.【F:venv/src/gameProgramer.py†L71-L352】
+
+Emoji Sudoku (gameSludoku.py)
+-----------------------------
+Overview: A resizable Tkinter Latin-square variant that swaps digits for themed PNG icons and pastel backgrounds. Players choose 3×3 or 4×4 boards, and the setup routine generates solvable puzzles, loads per-dimension artwork, and constructs a grid of image buttons representing current values.【F:venv/src/gameSludoku.py†L22-L198】
+
+Core loop:
+- `cycle_symbol` rotates a cell through all allowed icons, while `check_solution` compares the mutable board against the stored solution, gating the “Next Game” button until the current puzzle is correct.【F:venv/src/gameSludoku.py†L199-L320】
+- `next_puzzle` increments a puzzle counter, regenerates the board, and re-enables play, ensuring infinite practice without restarting the app.【F:venv/src/gameSludoku.py†L321-L364】
+
+AI integration cues: Status text, per-cell disabled states, and the dimension radio buttons broadcast whether a learner is experimenting or stuck, giving an AI tutor opportunities to suggest symmetry or row/column checks.【F:venv/src/gameSludoku.py†L90-L205】
+
+Words (gameWords.py)
+--------------------
+Overview: A vertical lane Pygame arcade where letters rain down and the player slides a catcher to build dictionary-approved words. Configuration covers lane geometry, spawn cadence, and color-coded glyph rendering, while helper managers validate vocabulary and tally scores based on word length.【F:venv/src/gameWords.py†L10-L198】
+
+Core loop:
+- `LetterSpawner` maintains a queue seeded with dictionary words plus distractors, emitting timed spawns into random inner lanes, and `Letter` objects update and render with unique pastel backdrops.【F:venv/src/gameWords.py†L149-L198】
+- The main loop (inside `main`) listens for lane-change inputs, appends caught letters to the current buffer, checks word validity on confirmation, and awards bonus points for longer submissions.【F:venv/src/gameWords.py†L199-L430】
+
+AI integration cues: Score displays, current buffer readouts, and lane positions reveal whether the player is targeting vowels or consonants, allowing targeted hints such as suggesting dictionary words that fit the captured prefix.【F:venv/src/gameWords.py†L199-L420】
+
+Puzzle (gamePuzzle.py)
+----------------------
+Overview: A tile-swap jigsaw that supports easy and hard grids, custom image uploads, and move tracking. The UI splits control and puzzle panels, offers difficulty toggles, and lets learners queue a new image before starting a shuffled board.【F:venv/src/gamePuzzle.py†L8-L182】
+
+Core loop:
+- `start_puzzle` clears existing widgets, loads a random or custom image, slices it into tiles sized to the difficulty, and randomizes button placement while preserving the solved layout for comparison.【F:venv/src/gamePuzzle.py†L163-L282】
+- Click handlers track first and second selections, swap tiles, increment move counts, and check victory by comparing current to solved indices before enabling the “Next image” workflow.【F:venv/src/gamePuzzle.py†L283-L452】
+
+AI integration cues: Status/move labels and difficulty selections let an assistant encourage strategic swapping, remind players about the custom image option, or celebrate improvements in move efficiency.【F:venv/src/gamePuzzle.py†L39-L207】
+
+Missing Letters (gameRecenice.py)
+---------------------------------
+Overview: A mixed-media sentence builder that pairs storybook images with scrambled uppercase words. Frames segment the interface into picture, available words, ordered sentence, and navigation rows while progress labels track the current card in the deck.【F:venv/src/gameRecenice.py†L6-L125】
+
+Core loop:
+- `prikazi_pomesane_reci` shuffles tokens, creates colorful buttons, and repopulates the available/selected containers, while `toggle_word` moves buttons between rows and `proveri_recenicu` enables “Next” only when the reconstructed sentence matches the source.【F:venv/src/gameRecenice.py†L140-L263】
+- Navigation buttons call `sledeci`/`prethodni`, preserving validation per card and culminating in `zavrsi_igru` for closure messaging.【F:venv/src/gameRecenice.py†L50-L139】【F:venv/src/gameRecenice.py†L264-L332】
+
+AI integration cues: The ordered vs. unordered containers, progress label, and button states make it easy to identify misplaced words and guide the learner toward referencing the paired illustration for hints.【F:venv/src/gameRecenice.py†L34-L210】
+
+Add and Subtract (gameBasicOps.py)
+----------------------------------
+Overview: An arithmetic fluency drill featuring pictorial operands and nine multiple-choice buttons. Initialization lays out numeric labels, fruit image strips, score/attempt counters, and controls for cycling problems, toggling operations, restarting, or ending the session.【F:venv/src/gameBasicOps.py†L7-L135】
+
+Core loop:
+- `_generate_problem` selects addition operands within 1–5 while avoiding sums of 10 or subtraction pairs without negatives, repaints operand images, and disables the “Next” button until a correct response arrives.【F:venv/src/gameBasicOps.py†L143-L197】
+- `_check_answer` increments attempts, provides color-coded feedback, reveals the solution strip on success, bumps the score, and re-enables progression; `_toggle_operation` flips between addition and subtraction and regenerates a task immediately.【F:venv/src/gameBasicOps.py†L198-L259】
+
+AI integration cues: Score/attempt labels, the feedback banner, and the visible fruit counts give an assistant precise hooks for praising accuracy, nudging counting strategies, or deciding when to reset the session.【F:venv/src/gameBasicOps.py†L36-L214】
+
+Kefalica Highway (gameKefalica.py)
+----------------------------------
+Overview: A large-scale Pygame construction game where players drag-and-drop road tiles from an inventory to complete a highway, then animate a car along the solved path. The `Game` class loads level data with missing tiles, maintains an undoable move history, and renders UI buttons for checking, undoing, fetching new tiles, or swapping levels.【F:venv/src/gameKefalica.py†L12-L210】
+
+Core loop:
+- Interactions let players pick inventory tiles, snap them onto highlighted grid cells, and trigger solution checks that validate path continuity, update saved progress, and, when correct, animate the car across recorded path points with optional sound.【F:venv/src/gameKefalica.py†L211-L612】
+- Level management loads JSON-defined grids, populates draggable inventories, and persists the highest solved level so returning learners resume appropriately.【F:venv/src/gameKefalica.py†L58-L210】【F:venv/src/gameKefalica.py†L613-L748】
+
+AI integration cues: On-screen messages, button enablement, and car animation state reveal whether the student needs placement hints, undo reminders, or praise for completing a complex road network.【F:venv/src/gameKefalica.py†L123-L320】
+
+Dice Pyramid (gameKocke.py)
+----------------------------
+Overview: A Tkinter/Matplotlib hybrid that displays randomized 3D cube stacks and quizzes players on total cube count under time pressure. The UI embeds a live Matplotlib canvas beside answer buttons, a score readout, and a timer that updates via Tk `after` callbacks.【F:venv/src/gameKocke.py†L34-L149】
+
+Core loop:
+- `next_level` randomizes a new cube count without repeating the prior total, redraws the 3D projection, and seeds four answer options before storing the correct total for evaluation.【F:venv/src/gameKocke.py†L112-L139】
+- `check_answer` adjusts the score, updates feedback text, and immediately queues another configuration, keeping the cadence brisk for estimation practice.【F:venv/src/gameKocke.py†L140-L173】
+
+AI integration cues: Timer, score, and the immediate correctness label allow an assistant to monitor pacing, encourage visualization strategies, or recommend taking a breather if accuracy drops.【F:venv/src/gameKocke.py†L50-L173】
+
+Sorting Lab (gameSort.py)
+-------------------------
+Overview: A multi-level tube-sorting puzzle implemented in Pygame where colored balls must be grouped by hue. Level data defines tube counts and capacities, while assets provide themed backgrounds and tube sprites sized to each difficulty.【F:venv/src/gameSort.py†L8-L200】
+
+Core loop:
+- The main loop inside `run_game` handles mouse selection of source/destination tubes, validates moves via `is_valid_destination`, tracks history for undo, and detects completion or stalemates to surface overlay controls.【F:venv/src/gameSort.py†L124-L420】
+- Level selectors and restart/undo buttons keep challenge scaling fluid, letting learners jump between configurations or recover from misplays without restarting Pygame.【F:venv/src/gameSort.py†L160-L260】
+
+AI integration cues: Move counters, overlay messages, and highlighted tubes expose the player’s reasoning, enabling an assistant to suggest heuristics (e.g., reserving empty tubes) or prompt level changes when mastery is evident.【F:venv/src/gameSort.py†L170-L420】
+
+Connector (gamePositions.py)
+----------------------------
+Overview: A Tkinter matching game that displays categorized image-word pairs and asks players to align them, optionally toggling English translations. The layout dedicates columns to images, blank answer slots, and shuffled words, with category cycling and language switches built in.【F:venv/src/gamePositions.py†L26-L200】
+
+Core loop:
+- Selecting an image row primes the corresponding answer slot, and clicking a word assigns it, enabling learners to build associations before hitting “Check,” which validates the full mapping and reports results.【F:venv/src/gamePositions.py†L135-L255】
+- `next_category` rotates through themed decks, while the English checkbox rebuilds the word column in real time for bilingual practice.【F:venv/src/gamePositions.py†L168-L255】
+
+AI integration cues: Message labels, selected-button styling, and the English toggle reveal comprehension progress and language preference, letting an assistant decide whether to supply vocabulary hints or encourage another category.【F:venv/src/gamePositions.py†L32-L256】
+
+Snakes and Ladders (gameSnake.py)
+---------------------------------
+Overview: A richly animated Snakes and Ladders remake built in Pygame with an 8×8 board, ladder/snake mapping, and support for one or two players. Classes encapsulate player movement, dice rolling, buttons, and the overarching state machine.【F:venv/src/gameSnake.py†L10-L220】
+
+Core loop:
+- `Player.move` computes step-by-step animation paths, handles snake bites and ladder climbs, and reports textual updates for narration, while `SnakesAndLadders.run` manages turn order, dice animations, and victory detection.【F:venv/src/gameSnake.py†L70-L358】
+- Button interactions let players start 1P/2P modes, roll dice, or exit, ensuring each session resets smoothly from the same interface.【F:venv/src/gameSnake.py†L186-L420】
+
+AI integration cues: The game message string, player positions, and dice animation state provide clear hooks for motivational commentary, probability tips, or reminders about needing an exact roll to win.【F:venv/src/gameSnake.py†L186-L420】
+
+Thinker (gameIQ.py)
+-------------------
+Overview: A Tkinter logic lab where systems of two or three equations are rendered with shape icons, paired with multiple-choice solutions, and reinforced via live plotting. Initialization loads themed imagery, builds radio buttons for unknown count, and divides the window between the algebra interface and a Matplotlib canvas.【F:venv/src/gameIQ.py†L12-L111】
+
+Core loop:
+- `setup_system` randomly constructs an invertible coefficient matrix, computes a hidden solution, formats each equation with iconography, and seeds plausible distractor answers alongside the correct tuple.【F:venv/src/gameIQ.py†L113-L205】
+- `check_answer` compares the chosen tuple to the hidden solution, updates result labels, and drives the right-hand plot to visualize the system, while restart regenerates a fresh challenge.【F:venv/src/gameIQ.py†L206-L350】
+
+AI integration cues: Choice radio buttons, result labels, and the graph canvas signal whether the learner grasped elimination/substitution, allowing tailored hints (e.g., suggesting comparing equations) or praise for precise reasoning.【F:venv/src/gameIQ.py†L37-L350】
